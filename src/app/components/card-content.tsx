@@ -39,6 +39,7 @@ export function CardContent({ project }: { project: ProjectProps['project'] }) {
                 {project.description}
             </p>
             <p className="mt-4 text-[10px] uppercase tracking-widest text-white/40">Função: {project.funcao}</p>
+            <p className="mt-2 text-[10px] uppercase tracking-widest text-[#FFC107]">Status: {project.status}</p>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ export interface ProjectProps {
     id: number;
     title: string;
     description: string;
-    tag: string | string[];
+    tag: string[];
     funcao: string;
     url?: string;
     image?: string;

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Github, Globe, Linkedin, Mail } from "iconoir-react";
+import { Github, Globe, Linkedin, Mail, Whatsapp } from "iconoir-react";
 import { SocialBtn } from "./social-btn";
 import Image from "next/image";
 import { EducationTimeline } from "@/src/data/content";
@@ -46,6 +46,7 @@ export function StickyCard() {
                     <SocialBtn icon={<Github />} href="https://github.com/drey-dev" label="GitHub Profile" />
                     <SocialBtn icon={<Linkedin />} href="https://www.linkedin.com/in/andreydahorapirola/" label="LinkedIn Profile" />
                     <SocialBtn icon={<Mail />} href="mailto:andrey.dhorapirola@gmail.com" label="Send Email" />
+                    <SocialBtn icon={<Whatsapp />} href="https://wa.me/5511947530995" label="WhatsApp Chat" />
                 </div>
                 </div>
             </motion.div>

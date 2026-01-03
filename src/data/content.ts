@@ -24,22 +24,24 @@ export const PROJECTS = [
   { 
     id: 3, 
     title: 'Rythym', 
-    tag: ['Web App', 'AI'],
+    tag: ['Web App', 'AI', 'API REST'],
     description: 'Aplicativo de streaming de música com playlists personalizadas e recomendações baseadas em IA.',
     funcao: "Fullstack",
-    url: "https://exemplo.com/projeto3",
+    url: "https://github.com/drey-dev/rythym",
     image: "/projeto3.png",
     status: "Em andamento",
   },
 ];
 
 export const SKILLS = [
-  "HTML", "CSS", "SASS", "React", "Next.js", "Angular.js",
-  "JavaScript", "TypeScript", "Tailwind", "Node.js", "Nest.js", 
-  "Express", "API REST", "GraphQL", "AWS", "Vercel", "Linux", 
+  "HTML", "CSS", "SASS", "React", "Next.js", "Angular.js", "Bootstrap",
+  "JavaScript", "TypeScript", "Tailwind", "Node.js", "Nest.js", "NoSQL",
+  "Express", "API REST", "GraphQL", "AWS", "Vercel", "Linux", "Node Package Manager",
   "PostgreSQL", "MongoDB", "MySQL", "UI/UX", "Figma", "Docker", 
   "PrismaORM", "TypesORM", "Framer Motion", "CI/CD", "Git",
-  "PHP", "WordPress", "C#", ".NET", "JQuery", "Web3",
+  "PHP", "WordPress", "C#", ".NET", "JQuery", "Web3", "SCRUM",
+  "Python", "Integração com IA", "SEO", "Accessibility", "Otimização de Performance",
+  "Metodologias Ágeis", "Trabalho em Equipe", "Resolução de Problemas",
 ];
 
 export const SERVICES = [
