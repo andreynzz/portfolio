@@ -103,6 +103,16 @@
     "SEO": "SEO", 
     "Accessibility": "Acessibilidade"
   },
+  "contactPage": {
+    "form": {
+      "title": "Entre em contato",
+      "name": "Nome",
+      "email": "Email",
+      "subject": "Assunto",
+      "message": "Mensagem",
+      "send": "Enviar"
+    }
+  },
   "footer": {
     "text": "Feito com Next.js, Framer Motion e Tailwind CSS"
   }

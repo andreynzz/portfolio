@@ -1,13 +1,19 @@
 import { usePathname, useRouter } from "@/src/i18n/routing";
 import { motion } from "framer-motion";
 import { Language } from "iconoir-react";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { useParams } from "next/navigation";
 
 export default function Header() {
-    const locale = useLocale(); // Pega o idioma atual ('pt' ou 'en')
     const router = useRouter();
     const pathname = usePathname();
     const t = useTranslations('header');
+
+    // Pegue os parâmetros da URL
+    const params = useParams();
+    // O "locale" virá daqui (ex: 'pt', 'en')
+    const locale = params.locale;
 
     // Função para alternar o idioma
     const toggleLanguage = () => {
@@ -30,11 +36,19 @@ export default function Header() {
                     transition={{ duration: 0.5, delay: 0.2 }}
                 >
                     <ul className="flex gap-6">
-                        <li><a href="#home" className="hover:text-[#FFC107] transition-colors">{t('home')}</a></li>
+                        <li>
+                            <Link href="/" className="hover:text-[#FFC107] transition-colors">
+                                {t('home')}
+                            </Link>
+                        </li>
                         <li><a href="#projects" className="hover:text-[#FFC107] transition-colors">{t('projects')}</a></li>
                         <li><a href="#experience" className="hover:text-[#FFC107] transition-colors">{t('experience')}</a></li>
                         <li><a href="#stack" className="hover:text-[#FFC107] transition-colors">{t('stack')}</a></li>
-                        <li><a href="#contact" className="hover:text-[#FFC107] transition-colors">{t('contact')}</a></li>
+                        <li>
+                            <Link href={`/${locale}/contact-form`} className="hover:text-[#FFC107] transition-colors">
+                                {t('contact')}
+                            </Link>
+                        </li>
                     </ul>
                 </motion.nav>
                 <button 
@@ -44,8 +58,8 @@ export default function Header() {
                 >
                     <div className="absolute inset-0 bg-white/10 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity" />
                     <Language className="w-6 h-6 text-white/60 hover:text-[#FFC107] transition-colors cursor-pointer relative z-10" />
-                    <span className="absolute -bottom-4 text-[10px] text-white/40 font-mono">
-                        {locale.toUpperCase()}
+                    <span className="absolute -bottom-4 text-[10px] text-white/40 font-mono uppercase tracking-widest">
+                        {locale === 'pt' ? 'PT' : 'EN'}
                     </span>
                 </button>
             </motion.div>

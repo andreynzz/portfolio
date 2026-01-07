@@ -3,7 +3,7 @@ import { JetBrains_Mono, Playfair_Display } from "next/font/google";
 import '../globals.css';
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import SplashScreen from "../components/splash-screen";
+import SplashScreen from "../../components/splash-screen";
 
 const playfair = Playfair_Display({ 
   variable: "--font-playfair-display",

@@ -1,12 +1,12 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { GlassProjectCard } from '../components/glass-project-card';
-import { MarqueeText } from '../components/marquee-text';
-import { StickyCard } from '../components/sticky-card';
+import { GlassProjectCard } from '../../components/glass-project-card';
+import { MarqueeText } from '../../components/marquee-text';
+import { StickyCard } from '../../components/sticky-card';
 import { PROJECTS, TECH_SKILLS, SOFT_SKILLS_KEYS } from '@/src/data/content';
-import ProfessionalExperience from '../components/professional-experience';
-import Header from '../components/header';
+import ProfessionalExperience from '../../components/professional-experience';
+import Header from '../../components/header';
 import { useTranslations } from 'next-intl';
 
 export default function Home() {
