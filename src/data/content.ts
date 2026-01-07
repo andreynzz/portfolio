@@ -75,19 +75,16 @@ export const professionalExperience = [
   {
     translationKey: "Psiconnect",
     company: "Psiconnect",
-    period: "2025 - Presente",
     responsibilityCount: 5, // Ajuda a iterar no componente (res1, res2...)
   },
   {
     translationKey: "EspacoCinthia",
     company: "Espaço Cinthia França",
-    period: "2025 - Presente",
     responsibilityCount: 3,
   },
   {
     translationKey: "Teleperformance",
     company: "Teleperformance | UOL",
-    period: "2024",
     responsibilityCount: 3,
   },
 ];

@@ -24,7 +24,7 @@ export default function ProfessionalExperience() {
             <div className="flex items-center gap-3 mb-8">
                 <Suitcase className="text-[#FFC107] w-6 h-6" />
                 <h2 className="text-3xl text-[#FFC107] font-bold font-playfair-display italic">
-                    Experiência Profissional
+                    {t('title')}
                 </h2>
             </div>
 
@@ -57,7 +57,7 @@ export default function ProfessionalExperience() {
                             <div className="flex items-center gap-2 mt-2 sm:mt-0 bg-white/5 px-3 py-1 rounded-full border border-white/10">
                                 <Calendar className="w-3 h-3 text-[#FFC107]" />
                                 <span className="text-xs font-mono text-white/60 whitespace-nowrap">
-                                {exp.period}
+                                    {t(`${exp.translationKey}.period`)}
                                 </span>
                             </div>
                         </div>

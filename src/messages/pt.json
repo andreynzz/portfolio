@@ -62,8 +62,10 @@
     }
   },
   "Experience": {
+    "title": "Experiência Profissional",
     "Psiconnect": {
       "role": "Product Owner & Desenvolvedor Fullstack",
+      "period": "2025 - Presente",
       "res1": "Liderança do desenvolvimento de uma plataforma de terapia online, coordenando uma equipe de 4 desenvolvedores.",
       "res2": "Implementação de funcionalidades de videochamada e agendamento utilizando Next.js e Node.js.",
       "res3": "Colaboração com designers para criar uma interface de usuário intuitiva e acessível.",
@@ -72,12 +74,14 @@
     },
     "EspacoCinthia": {
       "role": "Desenvolvedor Fullstack",
+      "period": "2025 - Presente",
       "res1": "Desenvolvimento e manutenção do site institucional utilizando Next.js e Tailwind CSS.",
       "res2": "Implementação de práticas de SEO e acessibilidade para melhorar a visibilidade online.",
       "res3": "Colaboração com a equipe de design para criar uma experiência de usuário envolvente."
     },
     "Teleperformance": {
       "role": "Suporte Técnico",
+      "period": "2024",
       "res1": "Fornecimento de suporte técnico de primeiro nível para clientes.",
       "res2": "Auxilio na resolução de problemas relacionados a software e hardware.",
       "res3": "Venda de serviços adicionais e upgrades."
