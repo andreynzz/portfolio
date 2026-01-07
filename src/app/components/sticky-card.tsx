@@ -24,7 +24,6 @@ export function StickyCard() {
                         alt="Andrey da Hora"
                         width={400}
                         height={400}
-                        quality={100}
                         className="w-full rounded-2xl mb-6 object-cover border border-white/20"
                     />
                     <h1 className="text-5xl lg:text-6xl font-normal leading-tight mb-4 italic font-playfair-display text-[#FFC107]">
