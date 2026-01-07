@@ -1,14 +1,12 @@
+export interface ProjectItem {
+  id: number;
+  url: string;
+  image: string;
+  tag: string[];
+}
+
 export interface ProjectProps {
-  project: {
-    id: number;
-    title: string;
-    description: string;
-    tag: string[];
-    funcao: string;
-    url?: string;
-    image?: string;
-    status: string;
-  };
+  project: ProjectItem;
   index: number;
   className?: string;
 }

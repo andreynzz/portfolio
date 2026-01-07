@@ -1,18 +1,21 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { GlassProjectCard } from './components/glass-project-card';
-import { MarqueeText } from './components/marquee-text';
-import { ServiceGlassCard } from './components/service-glass-card';
-import { StickyCard } from './components/sticky-card';
-import { HalfMoon, Language } from 'iconoir-react';
-import { PROJECTS, SERVICES, SKILLS } from '../data/content';
-import ProfessionalExperience from './components/professional-experience';
+import { GlassProjectCard } from '../components/glass-project-card';
+import { MarqueeText } from '../components/marquee-text';
+import { StickyCard } from '../components/sticky-card';
+import { PROJECTS, TECH_SKILLS, SOFT_SKILLS_KEYS } from '@/src/data/content';
+import ProfessionalExperience from '../components/professional-experience';
+import Header from '../components/header';
+import { useTranslations } from 'next-intl';
 
 export default function Home() {
+  const tSoftSkills = useTranslations('SoftSkills');
+  const tHome = useTranslations('HomePage'); // Para traduzir "Stack Tecnológico" se quiser
+  const tFooter = useTranslations('footer');
+
   return (
     <main className="relative min-h-screen bg-[#121212] text-[#F5F5F5] p-4 md:p-6 font-mono selection:bg-[#FFC107] selection:text-black overflow-x-hidden">
-      {/* --- Ambient Background --- */}
       <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
         <motion.div 
           animate={{ x: [0, 100, -50, 0], y: [0, -50, 50, 0], scale: [1, 1.2, 1] }}
@@ -27,32 +30,14 @@ export default function Home() {
         <div className="absolute inset-0 opacity-[0.05] bg-[url('https://grainy-gradients.vercel.app/noise.svg')] mix-blend-overlay"></div>
       </div>
 
-      <header>
-        <motion.div 
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="w-full mx-auto mb-8 flex gap-3 justify-end"
-        >
-          <button>
-            <Language className="w-6 h-6 text-white/60 hover:text-white transition-colors cursor-pointer" />
-          </button>
-          <button>
-            <HalfMoon className="w-6 h-6 text-white/60 hover:text-white transition-colors cursor-pointer" />
-          </button>
-        </motion.div>
-      </header>
+      <Header />
 
-      {/* --- Estrutura Bento Grid --- */}
       <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-4">
         
-        {/* --- COLUNA ESQUERDA (STICKY) --- */}
         <StickyCard />
 
-        {/* --- COLUNA DIREITA (SCROLLABLE) --- */}
         <div className="lg:col-span-8 flex flex-col gap-4 pb-10">
           
-          {/* Marquee Glass */}
           <motion.div 
             initial={{ opacity: 0, scale: 0.98 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -64,6 +49,7 @@ export default function Home() {
             
             <MarqueeText text="CREATIVE DEV • UI/UX DESIGN • NEXT.JS • MOTION • NEST.JS •" />
           </motion.div>
+
           <section className="grid grid-cols-1 md:grid-cols-2 gap-4 auto-rows-fr">
             {PROJECTS.map((project, i) => (
               <GlassProjectCard 
@@ -75,12 +61,6 @@ export default function Home() {
             ))}
           </section>
 
-          <section className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {SERVICES.map((service, i) => (
-                 <ServiceGlassCard key={i} title={service.title} icon={<service.icon />} index={i} />
-              ))}
-          </section>
-
           <ProfessionalExperience />
 
           <motion.div 
@@ -89,20 +69,40 @@ export default function Home() {
              viewport={{ once: true, margin: "-50px" }}
              className="bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl p-8 hover:border-[#FFC107]/30 transition-colors"
           >
-            <h3 className="text-2xl mb-6 italic font-playfair-display text-[#FFC107]">Stack Tecnológico</h3>
-            <div className="flex flex-wrap gap-2">
-              {SKILLS.map((skill, i) => (
-                <span key={i} className="px-4 py-2 border border-white/10 rounded-full text-xs text-white/70 hover:bg-[#FFC107] hover:text-black hover:border-[#FFC107] transition-all duration-300 cursor-default">
-                  {skill}
-                </span>
-              ))}
+            <h3 className="text-2xl mb-6 italic font-playfair-display text-[#FFC107]">{tHome('stack')}</h3>
+            
+            <div className="flex flex-col gap-6">
+                {/* Tech Skills */}
+                <div>
+                    <h4 className="text-sm text-white/40 uppercase mb-3 tracking-widest">Tech</h4>
+                    <div className="flex flex-wrap gap-2">
+                        {TECH_SKILLS.map((skill, i) => (
+                            <span key={i} className="px-4 py-2 border border-white/10 rounded-full text-xs text-white/70 hover:bg-[#FFC107] hover:text-black hover:border-[#FFC107] transition-all duration-300 cursor-default">
+                                {skill}
+                            </span>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Soft Skills */}
+                <div>
+                    <h4 className="text-sm text-white/40 uppercase mb-3 tracking-widest">Soft Skills</h4>
+                    <div className="flex flex-wrap gap-2">
+                        {SOFT_SKILLS_KEYS.map((key, i) => (
+                            <span key={i} className="px-4 py-2 border border-blue-500/30 text-blue-200 rounded-full text-xs hover:bg-blue-500 hover:text-white transition-all duration-300 cursor-default">
+                                {tSoftSkills(key)}
+                            </span>
+                        ))}
+                    </div>
+                </div>
             </div>
+
           </motion.div>
         </div>
       </div>
       <footer className="py-8 text-center text-white/20 text-xs flex flex-col items-center gap-2">
         <p>© {new Date().getFullYear()} Portfolio. Andrey da Hora Pirola.</p>
-        <p>Feito com Next.js, Framer Motion e Tailwind CSS</p>
+        <p>{tFooter('text')}</p>
       </footer>
     </main>
   );

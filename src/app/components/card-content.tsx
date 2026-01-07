@@ -1,8 +1,11 @@
 import { ProjectProps } from "@/src/types/project.type";
 import { ArrowUpRight } from "iconoir-react";
 import Image from "next/image"; 
+import { useTranslations } from "next-intl";
 
 export function CardContent({ project }: { project: ProjectProps['project'] }) {
+  const t = useTranslations('Projects');
+
   return (
     <div className="group relative bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl overflow-hidden hover:border-[#FFC107]/50 transition-all duration-500 flex flex-col h-full min-h-75">
       {/* Imagem de Fundo com Overlay */}
@@ -10,7 +13,7 @@ export function CardContent({ project }: { project: ProjectProps['project'] }) {
          <div className="absolute inset-0 bg-linear-to-br from-amber-900/30 to-yellow-900/30 group-hover:scale-105 transition-transform duration-700" />
          <Image 
             src={project.image || '/placeholder.jpg'} 
-            alt={project.title} 
+            alt={t(`${project.id}.title`)} 
             fill 
             className="object-cover opacity-50 group-hover:opacity-30 group-hover:scale-105 transition-all duration-700 grayscale group-hover:grayscale-0"
          /> 
@@ -34,12 +37,19 @@ export function CardContent({ project }: { project: ProjectProps['project'] }) {
         </div>
         
         <div className="mt-auto transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-            <h3 className="text-2xl mb-2 font-playfair-display text-white group-hover:text-[#FFC107] transition-colors">{project.title}</h3>
+            {/* Traduções dinâmicas baseadas no ID */}
+            <h3 className="text-2xl mb-2 font-playfair-display text-white group-hover:text-[#FFC107] transition-colors">
+                {t(`${project.id}.title`)}
+            </h3>
             <p className="text-white/60 text-xs leading-relaxed line-clamp-2 group-hover:text-white/80 transition-colors">
-                {project.description}
+                {t(`${project.id}.description`)}
             </p>
-            <p className="mt-4 text-[10px] uppercase tracking-widest text-white/40">Função: {project.funcao}</p>
-            <p className="mt-2 text-[10px] uppercase tracking-widest text-[#FFC107]">Status: {project.status}</p>
+            <p className="mt-4 text-[10px] uppercase tracking-widest text-white/40">
+                {t(`${project.id}.role`)}
+            </p>
+            <p className="mt-2 text-[10px] uppercase tracking-widest text-[#FFC107]">
+                Status: {t(`${project.id}.status`)}
+            </p>
         </div>
       </div>
     </div>

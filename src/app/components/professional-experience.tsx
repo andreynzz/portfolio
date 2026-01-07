@@ -1,16 +1,16 @@
 import { motion } from 'framer-motion';
 import { professionalExperience } from '@/src/data/content';
 import { Suitcase, Calendar } from 'iconoir-react';
+import { useTranslations } from 'next-intl';
 
 export default function ProfessionalExperience() {
-    // Variáveis de animação para efeito cascata
+    const t = useTranslations('Experience');
+
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: {
-        opacity: 1,
-        transition: {
-            staggerChildren: 0.2 // Atraso entre cada item
-        }
+            opacity: 1,
+            transition: { staggerChildren: 0.2 }
         }
     };
 
@@ -41,20 +41,19 @@ export default function ProfessionalExperience() {
                         variants={itemVariants}
                         className="relative pl-8 group"
                     >
-                        {/* Ponto na linha do tempo */}
                         <div className="absolute -left-2.25 top-2 w-4 h-4 rounded-full bg-[#1a1a1a] border-2 border-[#FFC107] group-hover:bg-[#FFC107] transition-colors shadow-[0_0_10px_rgba(255,193,7,0.3)]"></div>
 
                         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
                             <div>
+                                {/* Busca o Cargo traduzido usando a chave de tradução */}
                                 <h3 className="text-xl font-bold text-white group-hover:text-[#FFC107] transition-colors">
-                                    {exp.role}
+                                    {t(`${exp.translationKey}.role`)}
                                 </h3>
                                 <span className="text-lg text-white/80 font-medium">
                                     {exp.company}
                                 </span>
                             </div>
                             
-                            {/* Badge de Data */}
                             <div className="flex items-center gap-2 mt-2 sm:mt-0 bg-white/5 px-3 py-1 rounded-full border border-white/10">
                                 <Calendar className="w-3 h-3 text-[#FFC107]" />
                                 <span className="text-xs font-mono text-white/60 whitespace-nowrap">
@@ -64,10 +63,12 @@ export default function ProfessionalExperience() {
                         </div>
 
                         <ul className="mt-4 space-y-2">
-                            {exp.responsibilities.map((resp, i) => (
+                            {/* Cria um array baseado no número de responsabilidades para iterar */}
+                            {Array.from({ length: exp.responsibilityCount }).map((_, i) => (
                                 <li key={i} className="flex items-start text-white/70 text-sm leading-relaxed hover:text-white/90 transition-colors">
                                     <span className="mr-2 mt-1.5 w-1.5 h-1.5 bg-white/20 rounded-full shrink-0" />
-                                    {resp}
+                                    {/* Busca res1, res2, res3... */}
+                                    {t(`${exp.translationKey}.res${i + 1}`)}
                                 </li>
                             ))}
                         </ul>

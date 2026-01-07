@@ -1,0 +1,98 @@
+{
+  "HomePage": {
+    "title": "Desenvolvedor Criativo",
+    "stack": "Stack Tecnológico"
+  },
+  "StickyCard": {
+    "location": "Localização",
+    "experience": "Experiência",
+    "opentowork": "Aberto a oportunidades",
+    "journey": "Jornada Educacional",
+    "years": "Anos",
+    "summary": "Desenvolvedor Fullstack e Designer apaixonado por criar experiências digitais imersivas e performáticas."
+  },
+  "Projects": {
+    "1": {
+      "title": "Espaço Cinthia França",
+      "description": "Site institucional responsivo e moderno para clínica de desenvolvimento infantil neurodivergente.",
+      "role": "Fullstack & Design",
+      "status": "Finalizado"
+    },
+    "2": {
+      "title": "Psiconnect",
+      "description": "Plataforma de terapia online com funcionalidades de videochamada e acompanhamento psicológico.",
+      "role": "Product Owner & Fullstack",
+      "status": "Em andamento"
+    },
+    "3": {
+      "title": "Rythym",
+      "description": "Aplicativo de streaming de música com playlists personalizadas e recomendações baseadas em IA.",
+      "role": "Fullstack",
+      "status": "Em andamento"
+    }
+  },
+  "Education": {
+    "UNICID_ES": {
+      "degree": "Engenharia de Software",
+      "details": "Bacharelado em Engenharia de Software, focando em desenvolvimento de sistemas complexos e arquitetura de software."
+    },
+    "UNICID_ADS": {
+      "degree": "Análise e Desenvolvimento de Sistemas",
+      "details": "Tecnólogo em Análise e Desenvolvimento de Sistemas, com foco em programação, análise de sistemas e desenvolvimento web."
+    },
+    "SENAC": {
+      "degree": "Técnico em Informática",
+      "details": "Técnico em Informática, com ênfase em programação, redes e suporte técnico."
+    },
+    "SOUZA": {
+      "degree": "Ensino Médio",
+      "details": "Ensino Médio completo, com foco em ciências e matemática."
+    },
+    "CULTURA": {
+      "degree": "Língua Inglesa",
+      "details": "Cursando Inglês, com foco em comunicação e leitura."
+    },
+    "SOS_DIG": {
+      "degree": "Curso de Digitação",
+      "details": "Curso de digitação para aprimorar habilidades de teclado e velocidade de escrita."
+    },
+    "SOS_INFO": {
+      "degree": "Curso de Informática Básica",
+      "details": "Curso introdutório de informática, abordando conceitos básicos de hardware e software."
+    }
+  },
+  "Experience": {
+    "Psiconnect": {
+      "role": "Product Owner & Desenvolvedor Fullstack",
+      "res1": "Liderança do desenvolvimento de uma plataforma de terapia online, coordenando uma equipe de 4 desenvolvedores.",
+      "res2": "Implementação de funcionalidades de videochamada e agendamento utilizando Next.js e Node.js.",
+      "res3": "Colaboração com designers para criar uma interface de usuário intuitiva e acessível.",
+      "res4": "Garantia da conformidade com regulamentos de privacidade de dados, como LGPD e GDPR.",
+      "res5": "Otimização do desempenho da aplicação, resultando em uma redução de 30% no tempo de carregamento."
+    },
+    "EspacoCinthia": {
+      "role": "Desenvolvedor Fullstack",
+      "res1": "Desenvolvimento e manutenção do site institucional utilizando Next.js e Tailwind CSS.",
+      "res2": "Implementação de práticas de SEO e acessibilidade para melhorar a visibilidade online.",
+      "res3": "Colaboração com a equipe de design para criar uma experiência de usuário envolvente."
+    },
+    "Teleperformance": {
+      "role": "Suporte Técnico",
+      "res1": "Fornecimento de suporte técnico de primeiro nível para clientes.",
+      "res2": "Auxilio na resolução de problemas relacionados a software e hardware.",
+      "res3": "Venda de serviços adicionais e upgrades."
+    }
+  },
+  "SoftSkills": {
+    "teamwork": "Trabalho em Equipe",
+    "problemsolving": "Resolução de Problemas",
+    "agile": "Metodologias Ágeis",
+    "ai_integration": "Integração com IA",
+    "performance": "Otimização de Performance",
+    "SEO": "SEO", 
+    "Accessibility": "Acessibilidade"
+  },
+  "footer": {
+    "text": "Feito com Next.js, Framer Motion e Tailwind CSS"
+  }
+}

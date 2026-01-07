@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono, Playfair_Display } from "next/font/google";
-import "./globals.css";
+import '../globals.css';
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 
 const playfair = Playfair_Display({ 
   variable: "--font-playfair-display",
@@ -20,17 +22,24 @@ export const metadata: Metadata = {
   description: "Portfolio showcasing projects and skills of Andrey Pirola.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: { locale: string };
 }>) {
+  const { locale } = await params;
+
+  const messages = await getMessages();
   return (
-    <html lang="pt-br">
+    <html lang={locale}>
       <body
         className={`${mono.variable} ${playfair.variable} antialiased`}
       >
-        {children}
+        <NextIntlClientProvider messages={messages}>
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );

@@ -1,0 +1,98 @@
+{
+  "HomePage": {
+    "title": "Creative Developer",
+    "stack": "Tech Stack"
+  },
+  "StickyCard": {
+    "location": "Location",
+    "experience": "Experience",
+    "opentowork": "Open to work",
+    "journey": "Educational Journey",
+    "years": "Years",
+    "summary": "Fullstack Developer and Designer passionate about creating immersive and performative digital experiences."
+  },
+  "Projects": {
+    "1": {
+      "title": "Espaço Cinthia França",
+      "description": "Modern and responsive institutional website for a neurodivergent child development clinic.",
+      "role": "Fullstack & Design",
+      "status": "Completed"
+    },
+    "2": {
+      "title": "Psiconnect",
+      "description": "Online therapy platform featuring video calling and psychological monitoring capabilities.",
+      "role": "Product Owner & Fullstack",
+      "status": "In Progress"
+    },
+    "3": {
+      "title": "Rythym",
+      "description": "Music streaming app with personalized playlists and AI-based recommendations.",
+      "role": "Fullstack",
+      "status": "In Progress"
+    }
+  },
+  "Education": {
+    "UNICID_ES": {
+      "degree": "Software Engineering",
+      "details": "Bachelor's Degree in Software Engineering, focusing on complex systems development and software architecture."
+    },
+    "UNICID_ADS": {
+      "degree": "Systems Analysis and Development",
+      "details": "Associate Degree in Systems Analysis and Development, focusing on programming, systems analysis, and web development."
+    },
+    "SENAC": {
+      "degree": "IT Technician",
+      "details": "IT Technical Course, focusing on programming, networks, and technical support."
+    },
+    "SOUZA": {
+      "degree": "High School",
+      "details": "High School Diploma, focusing on sciences and mathematics."
+    },
+    "CULTURA": {
+      "degree": "English Language",
+      "details": "Currently studying English, focusing on communication and reading."
+    },
+    "SOS_DIG": {
+      "degree": "Typing Course",
+      "details": "Typing course to improve keyboard skills and typing speed."
+    },
+    "SOS_INFO": {
+      "degree": "Basic Computing Course",
+      "details": "Introductory computing course, covering basic hardware and software concepts."
+    }
+  },
+  "Experience": {
+    "Psiconnect": {
+      "role": "Product Owner & Fullstack Developer",
+      "res1": "Leading the development of an online therapy platform, coordinating a team of 4 developers.",
+      "res2": "Implementation of video calling and scheduling features using Next.js and Node.js.",
+      "res3": "Collaboration with designers to create an intuitive and accessible user interface.",
+      "res4": "Ensuring compliance with data privacy regulations, such as LGPD and GDPR.",
+      "res5": "Application performance optimization, resulting in a 30% reduction in load time."
+    },
+    "EspacoCinthia": {
+      "role": "Fullstack Developer",
+      "res1": "Development and maintenance of the institutional website using Next.js and Tailwind CSS.",
+      "res2": "Implementation of SEO and accessibility practices to improve online visibility.",
+      "res3": "Collaboration with the design team to create an engaging user experience."
+    },
+    "Teleperformance": {
+      "role": "Technical Support",
+      "res1": "Providing tier 1 technical support for clients.",
+      "res2": "Assisting in the resolution of software and hardware-related issues.",
+      "res3": "Upselling additional services and upgrades."
+    }
+  },
+  "SoftSkills": {
+    "teamwork": "Teamwork",
+    "problemsolving": "Problem Solving",
+    "agile": "Agile Methodologies",
+    "ai_integration": "AI Integration",
+    "performance": "Performance Optimization",
+    "SEO": "SEO",
+    "Accessibility": "Accessibility"
+  },
+  "footer": {
+    "text": "Made with Next.js, Framer Motion and Tailwind CSS"
+  }
+}
