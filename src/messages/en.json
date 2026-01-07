@@ -1,4 +1,11 @@
 {
+  "header": {
+    "home": "Home",
+    "projects": "Projects",
+    "experience": "Experience",
+    "stack": "Stack",
+    "contact": "Contact"
+  },
   "HomePage": {
     "title": "Creative Developer",
     "stack": "Tech Stack"

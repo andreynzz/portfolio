@@ -1,4 +1,11 @@
 {
+  "header": {
+    "home": "Início",
+    "projects": "Projetos",
+    "experience": "Experiência",
+    "stack": "Tecnologias",
+    "contact": "Contato"
+  },
   "HomePage": {
     "title": "Desenvolvedor Criativo",
     "stack": "Stack Tecnológico"

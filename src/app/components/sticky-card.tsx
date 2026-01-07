@@ -60,7 +60,9 @@ export function StickyCard() {
                 className="bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl p-6 flex justify-between items-center hover:bg-white/10 transition-colors"
             >
                 <div>
-                    <p className="text-[10px] text-white/40 uppercase tracking-widest mb-1">{tCrd('location')}</p>
+                    <p className="text-xs text-white/60 uppercase tracking-widest mb-1 font-medium">
+                        {tCrd('location')}
+                    </p>
                     <div className="flex items-center gap-2">
                         <Globe className="w-4 h-4 text-white/60"/>
                         <span className="text-lg">Brasil</span>

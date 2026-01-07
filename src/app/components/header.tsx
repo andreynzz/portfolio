@@ -1,12 +1,13 @@
 import { usePathname, useRouter } from "@/src/i18n/routing";
 import { motion } from "framer-motion";
 import { Language } from "iconoir-react";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function Header() {
     const locale = useLocale(); // Pega o idioma atual ('pt' ou 'en')
     const router = useRouter();
     const pathname = usePathname();
+    const t = useTranslations('header');
 
     // Função para alternar o idioma
     const toggleLanguage = () => {
@@ -19,8 +20,23 @@ export default function Header() {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="w-full mx-auto mb-8 flex gap-3 justify-end"
+                className="w-full mx-auto mb-8 flex gap-3 justify-between items-center"
             >
+                <div></div>
+                <motion.nav 
+                    className="flex gap-6 text-white/60 font-medium text-sm"
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                >
+                    <ul className="flex gap-6">
+                        <li><a href="#home" className="hover:text-[#FFC107] transition-colors">{t('home')}</a></li>
+                        <li><a href="#projects" className="hover:text-[#FFC107] transition-colors">{t('projects')}</a></li>
+                        <li><a href="#experience" className="hover:text-[#FFC107] transition-colors">{t('experience')}</a></li>
+                        <li><a href="#stack" className="hover:text-[#FFC107] transition-colors">{t('stack')}</a></li>
+                        <li><a href="#contact" className="hover:text-[#FFC107] transition-colors">{t('contact')}</a></li>
+                    </ul>
+                </motion.nav>
                 <button 
                     onClick={toggleLanguage} 
                     className="group relative flex items-center justify-center cursor-pointer"
