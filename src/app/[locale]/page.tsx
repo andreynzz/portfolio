@@ -80,7 +80,7 @@ export default function Home() {
               {tHero('contactMe')}
             </Link>
             <a 
-              href="/andreypirola.pdf" 
+              href="/Andrey_Pirola_FullStack_Developer.pdf" 
               target="_blank" 
               rel="noopener noreferrer"
               download="Andrey_Pirola_CV.pdf" // Nome que será salvo no PC da pessoa
