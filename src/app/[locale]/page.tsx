@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { Github, Linkedin, Mail, ArrowRight, Whatsapp } from "iconoir-react";
+import { Github, Linkedin, Mail, ArrowRight, Whatsapp, Download } from "iconoir-react";
 import Header from "@/src/components/header";
 import { SocialBtn } from "@/src/components/social-btn";
 import { useParams } from "next/navigation";
@@ -79,6 +79,16 @@ export default function Home() {
             >
               {tHero('contactMe')}
             </Link>
+            <a 
+              href="/andreypirola.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              download="Andrey_Pirola_CV.pdf" // Nome que será salvo no PC da pessoa
+              className="flex items-center gap-2 px-6 py-3 rounded-full border border-white/20 text-white hover:bg-white/10 transition-all cursor-pointer"
+            >
+              <Download className="w-4 h-4" />
+              {tHero('downloadCV')}
+            </a>
           </motion.div>
 
           {/* Links Sociais (Rodapé do Hero) */}

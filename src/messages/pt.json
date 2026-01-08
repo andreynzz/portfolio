@@ -15,6 +15,7 @@
       "description": "Transformando ideias complexas em experiências digitais elegantes. Especialista em React, Next.js e design de interface.",
       "viewProjects": "Ver Projetos",
       "contactMe": "Entrar em Contato",
+      "downloadCV": "Baixar Currículo",
       "stack": "Stack Tecnológico" 
     }
   },
@@ -123,6 +124,11 @@
       "message": "Mensagem",
       "send": "Enviar"
     }
+  },
+  "NotFoundPage": {
+    "title": "Página não encontrada",
+    "description": "Parece que você se perdeu no ciberespaço. A página que você está procurando não existe ou foi movida.",
+    "button": "Voltar para o Início"
   },
   "footer": {
     "text": "Feito com Next.js, Framer Motion e Tailwind CSS"

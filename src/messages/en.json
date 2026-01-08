@@ -15,6 +15,7 @@
       "description": "Transforming complex ideas in digital elegantly experiences. React, Next.js and interface design especialist.",
       "viewProjects": "See Projects",
       "contactMe": "Contact Me",
+      "downloadCV": "Download CV",
       "stack": "Tech Stack" 
     }
   },
@@ -123,6 +124,11 @@
       "message": "Message",
       "send": "Send"
     }
+  },
+  "NotFoundPage": {
+    "title": "Page not found",
+    "description": "Looks like you got lost in cyberspace. The page you are looking for does not exist or has been moved.",
+    "button": "Back to Home"
   },
   "footer": {
     "text": "Made with Next.js, Framer Motion and Tailwind CSS"
