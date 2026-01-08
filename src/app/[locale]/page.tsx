@@ -7,6 +7,7 @@ import { Github, Linkedin, Mail, ArrowRight, Whatsapp } from "iconoir-react";
 import Header from "@/src/components/header";
 import { SocialBtn } from "@/src/components/social-btn";
 import { useParams } from "next/navigation";
+import ApproachSection from "@/src/components/approach-section";
 
 export default function Home() {
   const tHero = useTranslations('HomePage.HeroPage');
@@ -88,6 +89,9 @@ export default function Home() {
             <SocialBtn icon={<Whatsapp />} href="https://wa.me/5511947530995" label="WhatsApp Chat" />
           </motion.div>
         </motion.div>
+
+        {/* Seção de Metodologia / Como eu trabalho */}
+        <ApproachSection />
     </div>    
   );
 }

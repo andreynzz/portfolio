@@ -73,3 +73,21 @@ export const professionalExperience = [
     responsibilityCount: 3,
   },
 ];
+
+export const MY_APPROACH = [
+  {
+    id: 1,
+    icon: "user", // Vamos usar isso para escolher o ícone no componente
+    translationKey: "ux_centric"
+  },
+  {
+    id: 2,
+    icon: "code",
+    translationKey: "clean_code"
+  },
+  {
+    id: 3,
+    icon: "fast",
+    translationKey: "performance"
+  }
+];

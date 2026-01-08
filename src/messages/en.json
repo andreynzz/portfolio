@@ -99,6 +99,21 @@
     "SEO": "SEO",
     "Accessibility": "Accessibility"
   },
+  "Approach": {
+    "title": "My Approach",
+    "ux_centric": {
+      "title": "User-Centric Design",
+      "description": "I don't just write code, I build experiences. I focus on intuitive and accessible interfaces, ensuring technology solves real people's problems."
+    },
+    "clean_code": {
+      "title": "Clean & Scalable Code",
+      "description": "I use modern architecture and strict typing to create software that is maintainable and ready to scale with the business."
+    },
+    "performance": {
+      "title": "Performance",
+      "description": "Speed is a feature. I optimize every asset and render cycle to ensure high Lighthouse scores and better SEO rankings."
+    }
+  },
   "contactPage": {
     "form": {
       "title": "Contact Me",

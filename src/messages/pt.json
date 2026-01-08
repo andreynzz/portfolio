@@ -99,6 +99,21 @@
     "SEO": "SEO", 
     "Accessibility": "Acessibilidade"
   },
+  "Approach": {
+    "title": "Como eu trabalho",
+    "ux_centric": {
+      "title": "Design Centrado no Usuário",
+      "description": "Não escrevo apenas código, construo experiências. Foco em interfaces intuitivas e acessíveis, garantindo que a tecnologia resolva problemas reais das pessoas."
+    },
+    "clean_code": {
+      "title": "Código Limpo & Escalável",
+      "description": "Utilizo arquitetura moderna e tipagem estrita para criar softwares que são fáceis de manter e prontos para crescer com o negócio."
+    },
+    "performance": {
+      "title": "Performance",
+      "description": "A velocidade é uma feature. Otimizo cada asset e renderização para garantir pontuações altas e melhor SEO."
+    }
+  },
   "contactPage": {
     "form": {
       "title": "Entre em contato",
