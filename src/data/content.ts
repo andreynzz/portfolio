@@ -7,7 +7,7 @@ export const PROJECTS = [
   },
   { 
     id: 2, 
-    url: "https://exemplo.com/projeto2",
+    url: "#",
     image: "/projeto2.jpg",
     tag: ['Web App', 'AI', 'Videochamada', 'Fullstack', 'API REST', 'Equipe'], 
   },
@@ -50,25 +50,10 @@ export const EducationTimeline = [
     period: "2021 - 2023",
   },
   {
-    translationKey: "SOUZA",
-    institution: "Colégio Souza Gouveia",
-    period: "2020 - 2022",
-  },
-  {
     translationKey: "CULTURA",
     institution: "Escola de Idiomas Cultura Inglesa",
     period: "2019 - 2022",
-  },
-  {
-    translationKey: "SOS_DIG",
-    institution: "S.O.S. Cultura e Educação",
-    period: "2019 - 2020",
-  },
-  {
-    translationKey: "SOS_INFO",
-    institution: "S.O.S. Cultura e Educação",
-    period: "2019 - 2020",
-  },
+  }
 ];
 
 export const professionalExperience = [

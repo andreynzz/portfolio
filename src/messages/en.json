@@ -29,13 +29,13 @@
   "Projects": {
     "1": {
       "title": "Espaço Cinthia França",
-      "description": "Modern and responsive institutional website for a neurodivergent child development clinic.",
+      "description": "Complete redesign of the digital presence, resulting in improved accessibility and search engine optimization (SEO) for the clinic.",
       "role": "Fullstack & Design",
       "status": "Completed"
     },
     "2": {
       "title": "Psiconnect",
-      "description": "Online therapy platform featuring video calling and psychological monitoring capabilities.",
+      "description": "SaaS for online therapy. Scalable architecture with WebRTC for real-time video and scheduling management.",
       "role": "Product Owner & Fullstack",
       "status": "In Progress"
     },
@@ -59,21 +59,9 @@
       "degree": "IT Technician",
       "details": "IT Technical Course, focusing on programming, networks, and technical support."
     },
-    "SOUZA": {
-      "degree": "High School",
-      "details": "High School Diploma, focusing on sciences and mathematics."
-    },
     "CULTURA": {
       "degree": "English Language",
       "details": "Currently studying English, focusing on communication and reading."
-    },
-    "SOS_DIG": {
-      "degree": "Typing Course",
-      "details": "Typing course to improve keyboard skills and typing speed."
-    },
-    "SOS_INFO": {
-      "degree": "Basic Computing Course",
-      "details": "Introductory computing course, covering basic hardware and software concepts."
     }
   },
   "Experience": {
