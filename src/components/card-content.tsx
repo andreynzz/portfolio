@@ -12,7 +12,7 @@ export function CardContent({ project }: { project: ProjectProps['project'] }) {
       <div className="absolute inset-0 z-0">
          <div className="absolute inset-0 bg-linear-to-br from-amber-900/30 to-yellow-900/30 group-hover:scale-105 transition-transform duration-700" />
          <Image 
-            src={project.image || '/placeholder.jpg'} 
+            src={project.image || '/404_file_not_found.jpg'} 
             alt={t(`${project.id}.title`)} 
             fill 
             className="object-cover opacity-50 group-hover:opacity-30 group-hover:scale-105 transition-all duration-700 grayscale group-hover:grayscale-0"

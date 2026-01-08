@@ -8,15 +8,27 @@ export const PROJECTS = [
   { 
     id: 2, 
     url: "#",
-    image: "/projeto2.jpg",
+    image: "",
     tag: ['Web App', 'AI', 'Videochamada', 'Fullstack', 'API REST', 'Equipe'], 
   },
   { 
     id: 3, 
-    url: "https://github.com/drey-dev/rythym",
-    image: "/projeto3.png",
+    url: "https://github.com/andreynzz/rythym",
+    image: "",
     tag: ['Web App', 'AI', 'API REST'],
   },
+  {
+    id: 4,
+    url: "https://github.com/andreynzz/spooky_house",
+    image: "/spooky_house.svg",
+    tag: ['Website', 'Ecommerce', 'Responsivo']
+  },
+  {
+    id: 5,
+    url: "https:github.com/andreynzz/botloldiscord",
+    image: "/mpjlol.png",
+    tag: ['BOT', 'Discord']
+  }
 ];
 
 // Separa skills técnicas (universais) das comportamentais (traduzíveis)

@@ -44,7 +44,19 @@
       "title": "Rythym",
       "description": "Music streaming app with personalized playlists and AI-based recommendations.",
       "role": "Fullstack",
-      "status": "In Progress"
+      "status": "Planning"
+    },
+    "4": {
+      "title": "Spooky House",
+      "description": "A Halloween-themed e-commerce site developed as a project for a web development course at university.",
+      "role": "Fullstack",
+      "status": "Archived"
+    },
+    "5": {
+      "title": "MPJLOL BOT",
+      "description": "A simple Discord bot for learning about the development process, made as a joke for a group of friends.",
+      "role": "Fullstack",
+      "status": "Archived"
     }
   },
   "Education": {
