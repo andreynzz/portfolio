@@ -2,13 +2,11 @@ import { motion } from "framer-motion";
 import { Github, Globe, Linkedin, Mail, Whatsapp } from "iconoir-react";
 import { SocialBtn } from "./social-btn";
 import Image from "next/image";
-import { EducationTimeline } from "@/src/data/content";
 import { useTranslations } from "next-intl";
 
 export function StickyCard() {
-    const tEdu = useTranslations('Education');
-    const tCrd = useTranslations('StickyCard');
     const experienceYears = new Date().getFullYear() - 2023;
+    const tCrd = useTranslations('StickyCard');
     
     return (
         <aside className="lg:col-span-4 lg:top-6 self-start flex flex-col gap-4">
@@ -71,30 +69,6 @@ export function StickyCard() {
                 <div className="text-right">
                     <p className="text-[10px] text-white/40 uppercase tracking-widest mb-1">{tCrd('experience')}</p>
                     <span className="text-xl italic font-playfair-display">+{experienceYears} {tCrd('years')}</span>
-                </div>
-            </motion.div>
-
-            <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                className="bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl p-6 hover:bg-white/10 transition-colors"
-            >
-                <h3 className="text-2xl mb-6 italic font-playfair-display text-[#FFC107]">{tCrd('journey')}</h3>
-                
-                <div className="space-y-0 border-l-2 border-white/10 ml-2">
-                    {EducationTimeline.slice().map((edu, index) => (
-                        <div key={index} className="relative pl-8 pb-8 last:pb-0">
-                            {index > 0 ? (
-                                <div className="absolute -left-2.25 top-0 w-4 h-4 rounded-full bg-gray-500"></div>
-                            ) : (
-                                <div className="absolute -left-2.25 top-0 w-4 h-4 rounded-full bg-[#FFC107] shadow-[0_0_10px_rgba(255,193,7,0.5)]"></div>
-                            )}
-                            {/* Título do curso traduzido */}
-                            <h4 className="text-white font-bold text-lg">{tEdu(`${edu.translationKey}.degree`)}</h4>
-                            <p className="text-white/60 text-sm mb-1">{edu.institution} • {edu.period}</p>
-                        </div>
-                    ))}
                 </div>
             </motion.div>
         </aside>

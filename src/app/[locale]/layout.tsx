@@ -4,6 +4,8 @@ import '../globals.css';
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import SplashScreen from "../../components/splash-screen";
+import Header from "@/src/components/header";
+import AnimatedBackground from "@/src/components/ui/animated-background";
 
 const playfair = Playfair_Display({ 
   variable: "--font-playfair-display",
@@ -40,7 +42,8 @@ export default async function RootLayout({
       >
         <NextIntlClientProvider messages={messages}>
           <SplashScreen />
-          {children}
+            <AnimatedBackground />
+            {children}
         </NextIntlClientProvider>
       </body>
     </html>

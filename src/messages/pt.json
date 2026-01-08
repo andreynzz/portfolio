@@ -3,12 +3,20 @@
     "home": "Início",
     "projects": "Projetos",
     "experience": "Experiência",
+    "education": "Educação",
     "stack": "Tecnologias",
     "contact": "Contato"
   },
   "HomePage": {
-    "title": "Desenvolvedor Criativo",
-    "stack": "Stack Tecnológico"
+    "HeroPage": {
+      "greeting": "Olá, bem-vindo ao meu portfólio",
+      "name": "Andrey da Hora",
+      "role": "Full Stack Developer",
+      "description": "Transformando ideias complexas em experiências digitais elegantes. Especialista em React, Next.js e design de interface.",
+      "viewProjects": "Ver Projetos",
+      "contactMe": "Entrar em Contato",
+      "stack": "Stack Tecnológico" 
+    }
   },
   "StickyCard": {
     "location": "Localização",

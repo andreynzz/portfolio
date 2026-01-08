@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from 'framer-motion';
 import { professionalExperience } from '@/src/data/content';
 import { Suitcase, Calendar } from 'iconoir-react';

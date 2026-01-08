@@ -36,13 +36,13 @@ export const SOFT_SKILLS_KEYS = [
 export const EducationTimeline = [
   {
     translationKey: "UNICID_ES",
-    institution: "UNICID",
+    institution: "Universidade Cidade de São Paulo - UNICID",
     period: "2025 - Presente",
   },
   {
     translationKey: "UNICID_ADS",
-    institution: "UNICID",
-    period: "2022 - 2023",
+    institution: "Universidade Cidade de São Paulo - UNICID",
+    period: "2023 - 2024",
   },
   {
     translationKey: "SENAC",

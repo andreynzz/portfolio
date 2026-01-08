@@ -70,9 +70,26 @@ export default function Header() {
                                         {t('home')}
                                     </Link>
                                 </li>
-                                <li><a href="#projects" className="hover:text-[#FFC107] transition-colors">{t('projects')}</a></li>
-                                <li><a href="#experience" className="hover:text-[#FFC107] transition-colors">{t('experience')}</a></li>
-                                <li><a href="#stack" className="hover:text-[#FFC107] transition-colors">{t('stack')}</a></li>
+                                <li>
+                                    <a href={`/${locale}/projects`} className="hover:text-[#FFC107] transition-colors">
+                                        {t('projects')}
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href={`/${locale}/experience`} className="hover:text-[#FFC107] transition-colors">
+                                        {t('experience')}
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href={`/${locale}/education`} className="hover:text-[#FFC107] transition-colors">
+                                        {t('education')}
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href={`/${locale}/stack`} className="hover:text-[#FFC107] transition-colors">
+                                        {t('stack')}
+                                    </a>
+                                </li>
                                 <li>
                                     <Link href={`/${locale}/contact-form`} className="hover:text-[#FFC107] transition-colors">
                                         {t('contact')}

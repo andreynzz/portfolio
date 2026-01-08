@@ -3,12 +3,20 @@
     "home": "Home",
     "projects": "Projects",
     "experience": "Experience",
+    "education": "Education",
     "stack": "Stack",
     "contact": "Contact"
   },
   "HomePage": {
-    "title": "Creative Developer",
-    "stack": "Tech Stack"
+    "HeroPage": {
+      "greeting": "Hello, welcome to my portfolio",
+      "name": "Andrey da Hora",
+      "role": "Full Stack Developer",
+      "description": "Transforming complex ideas in digital elegantly experiences. React, Next.js and interface design especialist.",
+      "viewProjects": "See Projects",
+      "contactMe": "Contact Me",
+      "stack": "Tech Stack" 
+    }
   },
   "StickyCard": {
     "location": "Location",
