@@ -4,7 +4,6 @@ import '../globals.css';
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import SplashScreen from "../../components/splash-screen";
-import Header from "@/src/components/header";
 import AnimatedBackground from "@/src/components/ui/animated-background";
 
 const playfair = Playfair_Display({ 
@@ -20,9 +19,49 @@ const mono = JetBrains_Mono({
   weight: ['400'] }
 );
 
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://seu-projeto.vercel.app'; // NOTA: Alterar depois
+
 export const metadata: Metadata = {
-  title: "Portfolio - Andrey Pirola",
-  description: "Portfolio showcasing projects and skills of Andrey Pirola.",
+  metadataBase: new URL(BASE_URL),
+  title: {
+    default: "Andrey Pirola | Full Stack Developer",
+    template: "%s | Andrey Pirola",
+  },
+  description: "Desenvolvedor Full Stack especializado em Next.js, React, TypeScript e interfaces modernas. Transformando ideias complexas em experiências digitais.",
+  keywords: [
+    "Full Stack Developer", 
+    "React", 
+    "Next.js", 
+    "TypeScript", 
+    "UI/UX Design", 
+    "Desenvolvedor Web", 
+    "Andrey Pirola"
+  ],
+  authors: [{ name: "Andrey Pirola", url: "https://github.com/drey-dev" }],
+  creator: "Andrey Pirola",
+  
+  // Configuração para compartilhamento (LinkedIn, WhatsApp, Twitter)
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    url: BASE_URL,
+    title: "Andrey Pirola - Portfólio & Projetos",
+    description: "Confira meus projetos recentes em Engenharia de Software e Desenvolvimento Web.",
+    siteName: "Andrey Pirola Portfolio",
+  },
+  
+  // Robôs de busca
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default async function RootLayout({
