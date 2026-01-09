@@ -25,7 +25,7 @@ export const PROJECTS = [
   },
   {
     id: 5,
-    url: "https:github.com/andreynzz/botloldiscord",
+    url: "https://github.com/andreynzz/botloldiscord",
     image: "/mpjlol.png",
     tag: ['BOT', 'Discord']
   }
