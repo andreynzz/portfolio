@@ -122,7 +122,7 @@ export default async function Image({ params }: { params: { locale: string } }) 
         >
              <div style={{ width: 12, height: 12, borderRadius: '50%', background: '#22c55e' }} />
              <span style={{ fontSize: 24, color: textWhite, fontFamily: 'monospace' }}>
-                github.com/drey-dev
+                github.com/andreynzz
              </span>
         </div>
       </div>
