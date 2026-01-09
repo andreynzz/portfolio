@@ -14,7 +14,6 @@ export default function Home() {
   const params = useParams();
   const locale = params.locale;
 
-  // Variáveis de animação para entrada suave (padrão do seu projeto)
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: { 
@@ -35,11 +34,11 @@ export default function Home() {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="flex flex-col justify-center items-center mt-20"
+          className="flex flex-col justify-center items-center mt-12 md:mt-24 max-w-5xl mx-auto"
         >
-          {/* Saudação pequena estilo 'code' */}
+          {/* Saudação */}
           <motion.div variants={itemVariants} className="mb-4">
-             <span className="px-3 py-1 rounded-full border border-[#FFC107]/30 text-[#FFC107] text-xs font-mono bg-[#FFC107]/5">
+             <span className="px-3 py-1 rounded-full border border-[#FFC107]/30 text-[#FFC107] text-xs font-mono bg-[#FFC107]/5 backdrop-blur-sm">
                👋 {tHero('greeting')}
              </span>
           </motion.div>
@@ -47,10 +46,10 @@ export default function Home() {
           {/* Nome e Título Principal */}
           <motion.h1 
             variants={itemVariants}
-            className="flex flex-col justify-center items-center text-5xl md:text-7xl font-bold mb-6 text-white tracking-tight"
+            className="flex flex-col justify-center items-center text-center text-4xl sm:text-5xl md:text-7xl font-bold mb-6 text-white tracking-tight leading-tight"
           >
             {tHero('name')}
-            <span className="font-playfair-display italic text-[#FFC107]">
+            <span className="font-playfair-display italic text-[#FFC107] mt-1 md:mt-0">
               {tHero('role')}
             </span>
           </motion.h1>
@@ -58,16 +57,19 @@ export default function Home() {
           {/* Pequena Bio */}
           <motion.p 
             variants={itemVariants}
-            className="text-white/60 text-lg md:text-xl leading-relaxed mb-8 text-balance font-sans"
+            className="text-white/60 text-base sm:text-lg md:text-xl leading-relaxed mb-8 text-center text-balance font-sans max-w-2xl px-2"
           >
             {tHero('description')}
           </motion.p>
 
           {/* Botões de Ação */}
-          <motion.div variants={itemVariants} className="flex flex-wrap gap-4 mb-12">
+          <motion.div 
+            variants={itemVariants} 
+            className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 mb-12 w-full sm:w-auto px-4 sm:px-0"
+          >
             <Link 
               href={`/${locale}/projects`} 
-              className="group flex items-center gap-2 bg-[#FFC107] text-black px-6 py-3 rounded-full font-medium hover:bg-[#FFC107]/90 transition-all"
+              className="group flex items-center justify-center gap-2 bg-[#FFC107] text-black px-6 py-3.5 rounded-full font-medium hover:bg-[#FFC107]/90 transition-all w-full sm:w-auto text-sm sm:text-base"
             >
               {tHero('viewProjects')}
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -75,24 +77,25 @@ export default function Home() {
 
             <Link 
               href={`/${locale}/contact-form`} 
-              className="flex items-center gap-2 px-6 py-3 rounded-full border border-white/20 text-white hover:bg-white/10 transition-all"
+              className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-white/20 text-white hover:bg-white/10 transition-all w-full sm:w-auto text-sm sm:text-base"
             >
               {tHero('contactMe')}
             </Link>
+            
             <a 
               href="/Andrey_Pirola_FullStack_Developer.pdf" 
               target="_blank" 
               rel="noopener noreferrer"
-              download="Andrey_Pirola_CV.pdf" // Nome que será salvo no PC da pessoa
-              className="flex items-center gap-2 px-6 py-3 rounded-full border border-white/20 text-white hover:bg-white/10 transition-all cursor-pointer"
+              download="Andrey_Pirola_FullStack_Developer.pdf"
+              className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-white/20 text-white hover:bg-white/10 transition-all cursor-pointer w-full sm:w-auto text-sm sm:text-base"
             >
               <Download className="w-4 h-4" />
               {tHero('downloadCV')}
             </a>
           </motion.div>
 
-          {/* Links Sociais (Rodapé do Hero) */}
-          <motion.div variants={itemVariants} className="flex items-center gap-6 text-white/40">
+          {/* Links Sociais */}
+          <motion.div variants={itemVariants} className="flex flex-wrap justify-center items-center gap-4 md:gap-6 text-white/40 pb-8 md:pb-0">
             <SocialBtn icon={<Github />} href="https://github.com/drey-dev" label="GitHub Profile" />
             <SocialBtn icon={<Linkedin />} href="https://www.linkedin.com/in/andreydahorapirola/" label="LinkedIn Profile" />
             <SocialBtn icon={<Mail />} href="mailto:andrey.dhorapirola@gmail.com" label="Send Email" />
@@ -100,7 +103,7 @@ export default function Home() {
           </motion.div>
         </motion.div>
 
-        {/* Seção de Metodologia / Como eu trabalho */}
+        {/* Seção de Metodologia */}
         <ApproachSection />
     </div>    
   );

@@ -9,7 +9,7 @@ export function StickyCard() {
     const tCrd = useTranslations('StickyCard');
     
     return (
-        <aside className="lg:col-span-4 lg:top-6 self-start flex flex-col gap-4">
+        <aside className="hidden lg:col-span-4 lg:top-6 self-start md:flex flex-col gap-4">
             <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -18,7 +18,7 @@ export function StickyCard() {
             >
                <div>
                     <Image
-                        src="/profile.jpg"
+                        src="/profile2.jpg"
                         alt="Andrey da Hora"
                         width={400}
                         height={400}
