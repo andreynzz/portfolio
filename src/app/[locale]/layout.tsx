@@ -19,7 +19,7 @@ const mono = JetBrains_Mono({
   weight: ['400'] }
 );
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://seu-projeto.vercel.app'; // NOTA: Alterar depois
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -62,6 +62,13 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  alternates: {
+  canonical: './',
+  languages: {
+    'pt': '/pt',
+    'en': '/en',
+  },
+},
 };
 
 export default async function RootLayout({

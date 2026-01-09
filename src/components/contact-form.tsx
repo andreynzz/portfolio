@@ -42,7 +42,11 @@ export default function ContactForm() {
                 {t('title')}
             </motion.h2>
 
-            <form action="https://formspree.io/f/your-form-id" method="POST" className="flex flex-col gap-6">
+            <form 
+                action={`https://formspree.io/f/${process.env.NEXT_PUBLIC_FORMSPREE_ID}`} 
+                method="POST" 
+                className="flex flex-col gap-6"
+            >
                 
                 {/* Campo Nome */}
                 <motion.div variants={itemVariants} className="relative">
