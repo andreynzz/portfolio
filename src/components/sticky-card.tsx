@@ -43,7 +43,7 @@ export function StickyCard() {
                         </div>
                     </div>
                     <div className="flex justify-between mx-10 gap-4">
-                        <SocialBtn icon={<Github />} href="https://github.com/drey-dev" label="GitHub Profile" />
+                        <SocialBtn icon={<Github />} href="https://github.com/andreynzz" label="GitHub Profile" />
                         <SocialBtn icon={<Linkedin />} href="https://www.linkedin.com/in/andreydahorapirola/" label="LinkedIn Profile" />
                         <SocialBtn icon={<Mail />} href="mailto:andrey.dhorapirola@gmail.com" label="Send Email" />
                         <SocialBtn icon={<Whatsapp />} href="https://wa.me/5511947530995" label="WhatsApp Chat" />
