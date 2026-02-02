@@ -136,7 +136,7 @@ export default function Header() {
                     <div className="absolute inset-0 bg-white/10 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity" />
                     <Language className="w-6 h-6 text-white/60 hover:text-[#FFC107] transition-colors cursor-pointer relative z-10" />
                     <span className="absolute -bottom-4 text-[10px] text-white/40 font-mono uppercase tracking-widest">
-                        {locale === 'pt' ? 'PT' : 'EN'}
+                        {locale === 'pt' ? 'EN' : 'PT'}
                     </span>
                 </button>
             </motion.div>
