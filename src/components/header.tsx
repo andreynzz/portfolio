@@ -40,7 +40,7 @@ export default function Header() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
-                className="w-full mx-auto mb-8 flex gap-3 justify-between items-center relative z-50"
+                className="w-full mx-auto my-4 flex gap-3 justify-between items-center relative z-50"
             >
                 {/* Elemento vazio para balancear o justify-between (se necessário) */}
                 <div className="w-10"></div>
@@ -51,7 +51,7 @@ export default function Header() {
                         // Removemos 'transition-all' para evitar conflito com 'layout'
                         className={`flex items-center justify-center text-white/60 font-medium text-sm cursor-pointer overflow-hidden
                             ${isHovered 
-                                ? 'fixed inset-0 z-[100] bg-[#0a0a0a] flex-col gap-8 md:gap-0 md:relative md:inset-auto md:bg-white/5 md:backdrop-blur-md md:rounded-full md:border md:border-white/10 md:px-6 md:py-2 md:flex-row' 
+                                ? 'fixed inset-0 z-100 bg-[#0a0a0a] flex-col gap-8 md:gap-0 md:relative md:inset-auto md:bg-white/5 md:backdrop-blur-md md:rounded-full md:border md:border-white/10 md:px-6 md:py-2 md:flex-row' 
                                 : 'relative bg-white/5 backdrop-blur-md rounded-full border border-white/10 px-6 py-2'
                             }`}
                         initial={{ opacity: 0, y: -10 }}
