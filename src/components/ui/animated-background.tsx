@@ -15,7 +15,6 @@ export default function AnimatedBackground() {
         transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
         className="absolute bottom-[-10%] right-[-10%] w-100 h-100 bg-yellow-700/10 rounded-full blur-[100px]" 
       />
-      {/* Utilizando a classe .bg-noise definida no seu globals.css em vez de SVG inline */}
       <div className="absolute inset-0 bg-noise mix-blend-overlay"></div>
     </div>
   );

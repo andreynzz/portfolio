@@ -4,7 +4,12 @@ import '../globals.css';
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import SplashScreen from "../../components/splash-screen";
-import AnimatedBackground from "@/src/components/ui/animated-background";
+import dynamic from 'next/dynamic';
+
+// Otimização: Carrega o background pesado de forma dinâmica e apenas no cliente
+const AnimatedBackground = dynamic(() => import('@/src/components/ui/animated-background'), { 
+  ssr: true 
+});
 
 const playfair = Playfair_Display({ 
   variable: "--font-playfair-display",
@@ -43,7 +48,6 @@ export const metadata: Metadata = {
   authors: [{ name: "Andrey Pirola", url: "https://github.com/drey-dev" }],
   creator: "Andrey Pirola",
   
-  // Configuração para compartilhamento (LinkedIn, WhatsApp, Twitter)
   openGraph: {
     type: "website",
     locale: "pt_BR",
@@ -53,7 +57,6 @@ export const metadata: Metadata = {
     siteName: "Andrey Pirola Portfolio",
   },
   
-  // Robôs de busca
   robots: {
     index: true,
     follow: true,
@@ -66,12 +69,12 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-  canonical: './',
-  languages: {
-    'pt': '/pt',
-    'en': '/en',
+    canonical: './',
+    languages: {
+      'pt': '/pt',
+      'en': '/en',
+    },
   },
-},
 };
 
 export default async function RootLayout({
