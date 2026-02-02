@@ -3,15 +3,13 @@
 import React from "react";
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import Header from "../components/header";
 import { StickyCard } from "../components/sticky-card";
 import { MarqueeText } from "../components/marquee-text";
 
 export default function MainLayout({children}: {children: React.ReactNode}) {
     const tFooter = useTranslations('footer');
     return (
-        <main className="relative min-h-screen bg-[#121212] text-[#F5F5F5] p-4 md:p-6 font-mono selection:bg-[#FFC107] selection:text-black overflow-x-hidden">
-            <Header />
+        <main className="relative min-h-screen text-[#F5F5F5] p-4 md:p-6 font-mono selection:bg-[#FFC107] selection:text-black overflow-x-hidden">
 
             <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-4">
                 
