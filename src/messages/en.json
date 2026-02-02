@@ -142,6 +142,18 @@
     "description": "Looks like you got lost in cyberspace. The page you are looking for does not exist or has been moved.",
     "button": "Back to Home"
   },
+  "ProjectDetails": {
+    "back": "Back to projects",
+    "visit": "Visit Project",
+    "view_code": "View Code",
+    "tech_stack": "Labels",
+    "about": "About the Project",
+    "highlights": "Project Highlights",
+    "status_label": "Status",
+    "type_label": "Type",
+    "project_type": "Personal Project",
+    "platform": "Platform"
+  },
   "footer": {
     "text": "Made with Next.js, Framer Motion and Tailwind CSS"
   }

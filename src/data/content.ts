@@ -2,32 +2,37 @@ export const PROJECTS = [
   { 
     id: 1, 
     url: "https://espacocinthiafranca.vercel.app",
+    githubUrl: "https://github.com/andreynzz/espacocinthiafranca",
     image: "/projeto1.png",
-    tag: ['Website', 'Responsivo', 'UI/UX', 'SEO', 'Acessibilidade'],
+    tags: ['Website', 'Responsivo', 'UI/UX', 'SEO', 'Acessibilidade'],
   },
   { 
     id: 2, 
     url: "#",
+    githubUrl: "#",
     image: "",
-    tag: ['Web App', 'AI', 'Videochamada', 'Fullstack', 'API REST', 'Equipe'], 
+    tags: ['Web App', 'AI', 'Videochamada', 'Fullstack', 'API REST', 'Equipe'], 
   },
   { 
     id: 3, 
-    url: "https://github.com/andreynzz/rythym",
+    url: "#",
+    githubUrl: "https://github.com/andreynzz/rythym",
     image: "",
-    tag: ['Web App', 'AI', 'API REST'],
+    tags: ['Web App', 'AI', 'API REST'],
   },
   {
     id: 4,
-    url: "https://github.com/andreynzz/spooky_house",
+    url: "#",
+    githubUrl: "https://github.com/andreynzz/spooky_house",
     image: "/spooky_house.svg",
-    tag: ['Website', 'Ecommerce', 'Responsivo']
+    tags: ['Website', 'Ecommerce', 'Responsivo']
   },
   {
     id: 5,
-    url: "https://github.com/andreynzz/botloldiscord",
+    url: "#",
+    githubUrl: "https://github.com/andreynzz/botloldiscord",
     image: "/mpjlol.png",
-    tag: ['BOT', 'Discord']
+    tags: ['BOT', 'Discord']
   }
 ];
 

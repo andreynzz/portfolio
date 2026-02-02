@@ -1,8 +1,9 @@
 export interface ProjectItem {
   id: number;
   url: string;
+  githubUrl?: string;
   image: string;
-  tag: string[];
+  tags: string[];
 }
 
 export interface ProjectProps {

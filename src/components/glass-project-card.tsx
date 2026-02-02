@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Link from "next/link";
+import { Link } from "@/src/i18n/routing"; // Importante: Link do seu roteamento i18n
 import { CardContent } from "./card-content";
 import { ProjectProps } from "@/src/types/project.type";
 
@@ -12,13 +12,9 @@ export function GlassProjectCard({ project, index, className = "" }: ProjectProp
           transition={{ duration: 0.5, delay: index * 0.1 }}
           className={`h-full ${className}`}
         >
-          {project.url ? (
-            <Link href={project.url} target="_blank" className="block h-full">
+            <Link href={`/projects/${project.id}`} className="block h-full cursor-pointer">
               <CardContent project={project} />
             </Link>
-          ) : (
-            <CardContent project={project} />
-          )}
         </motion.div>
     )
 }
