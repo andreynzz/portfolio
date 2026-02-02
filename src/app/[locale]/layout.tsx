@@ -3,9 +3,10 @@ import { JetBrains_Mono, Playfair_Display } from "next/font/google";
 import '../globals.css';
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import SplashScreen from "../../components/splash-screen";
 import dynamic from 'next/dynamic';
 import Header from "@/src/components/header";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 // Otimização: Carrega o background pesado de forma dinâmica e apenas no cliente
 const AnimatedBackground = dynamic(() => import('@/src/components/ui/animated-background'), { 
@@ -94,10 +95,13 @@ export default async function RootLayout({
         className={`${mono.variable} ${playfair.variable} antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
-          <SplashScreen />
-            <Header />
-            <AnimatedBackground />
-            {children}
+          <Header /> 
+          
+          <AnimatedBackground />
+          <main className="relative z-10"> 
+             {children}
+          </main>
+          
         </NextIntlClientProvider>
       </body>
     </html>
