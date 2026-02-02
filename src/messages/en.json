@@ -30,15 +30,15 @@
   "Projects": {
     "1": {
       "title": "Espaço Cinthia França",
-      "description": "Complete redesign of the digital presence, resulting in improved accessibility and search engine optimization (SEO) for the clinic.",
+      "description": "The Espaço Terapêutico Cinthia França was completely redrawn, resulting in improved accessibility and indexation (SEO) for the clinic. It presents a modern and user-friendly interface, making scheduling appointments and accessing clinic information easy.",
       "role": "Fullstack & Design",
       "status": "Completed"
     },
     "2": {
       "title": "Psiconnect",
-      "description": "SaaS for online therapy. Scalable architecture with WebRTC for real-time video and scheduling management.",
+      "description": "SaaS for online therapy. Scalable architecture with WebRTC for real-time video and scheduling management. My role in this project was to gather requirements and architect the solution as Product Owner, as well as act as Fullstack developer.",
       "role": "Product Owner & Fullstack",
-      "status": "In Progress"
+      "status": "Archived"
     },
     "3": {
       "title": "Rythym",
@@ -50,7 +50,7 @@
       "title": "Spooky House",
       "description": "A Halloween-themed e-commerce site developed as a project for a web development course at university.",
       "role": "Fullstack",
-      "status": "Archived"
+      "status": "Completed | Incomplete"
     },
     "5": {
       "title": "MPJLOL BOT",
@@ -81,7 +81,7 @@
     "title": "Professional Experience",
     "Psiconnect": {
       "role": "Product Owner & Fullstack Developer",
-      "period": "2025 - Currently",
+      "period": "2025",
       "res1": "Leading the development of an online therapy platform, coordinating a team of 4 developers.",
       "res2": "Implementation of video calling and scheduling features using Next.js and Node.js.",
       "res3": "Collaboration with designers to create an intuitive and accessible user interface.",
@@ -90,7 +90,7 @@
     },
     "EspacoCinthia": {
       "role": "Fullstack Developer",
-      "period": "2025 - Currently",
+      "period": "2025",
       "res1": "Development and maintenance of the institutional website using Next.js and Tailwind CSS.",
       "res2": "Implementation of SEO and accessibility practices to improve online visibility.",
       "res3": "Collaboration with the design team to create an engaging user experience."
@@ -144,15 +144,15 @@
   },
   "ProjectDetails": {
     "back": "Back to projects",
-    "visit": "Visit Project",
+    "visit": "Visit",
     "view_code": "View Code",
-    "tech_stack": "Labels",
+    "tech_stack": "Tags",
     "about": "About the Project",
     "highlights": "Project Highlights",
     "status_label": "Status",
     "type_label": "Type",
     "project_type": "Personal Project",
-    "platform": "Platform"
+    "plataform": "Platform"
   },
   "footer": {
     "text": "Made with Next.js, Framer Motion and Tailwind CSS"

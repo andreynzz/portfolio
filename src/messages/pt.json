@@ -30,15 +30,15 @@
   "Projects": {
     "1": {
       "title": "Espaço Cinthia França",
-      "description": "Redesign completo da presença digital, resultando em melhoria na acessibilidade e indexação (SEO) para a clínica.",
+      "description": "O Espaço Terapêutico Cinthia França foi redesenhado completamente, resultando em melhoria na acessibilidade e indexação (SEO) para a clínica. Apresenta uma interface moderna e amigável, facilitando o agendamento de consultas e o acesso às informações dos serviços oferecidos.",
       "role": "Fullstack & Design",
       "status": "Finalizado"
     },
     "2": {
       "title": "Psiconnect",
-      "description": "SaaS para terapia online. Arquitetura escalável com WebRTC para vídeo em tempo real e gestão de agendamentos.",
+      "description": "SaaS para terapia online. Arquitetura escalável com WebRTC para vídeo em tempo real e gestão de agendamentos. Minha função nesse projeto foi levantar os requisitos e arquitetar a solução como Product Owner, além de atuar como desenvolvedor Fullstack.",
       "role": "Product Owner & Fullstack",
-      "status": "Em andamento"
+      "status": "Arquivado"
     },
     "3": {
       "title": "Rythym",
@@ -50,7 +50,7 @@
       "title": "Spooky House",
       "description": "Um ecommerce de dia das bruxas desenvolvido como projeto para a matéria de desenvolvimento web na universidade.",
       "role": "Fullstack",
-      "status": "Finalizado"
+      "status": "Finalizado | Incompleto"
     },
     "5": {
       "title": "MPJLOL BOT",
@@ -81,7 +81,7 @@
     "title": "Experiência Profissional",
     "Psiconnect": {
       "role": "Product Owner & Desenvolvedor Fullstack",
-      "period": "2025 - Presente",
+      "period": "2025",
       "res1": "Liderança do desenvolvimento de uma plataforma de terapia online, coordenando uma equipe de 4 desenvolvedores.",
       "res2": "Implementação de funcionalidades de videochamada e agendamento utilizando Next.js e Node.js.",
       "res3": "Colaboração com designers para criar uma interface de usuário intuitiva e acessível.",
@@ -90,7 +90,7 @@
     },
     "EspacoCinthia": {
       "role": "Desenvolvedor Fullstack",
-      "period": "2025 - Presente",
+      "period": "2025",
       "res1": "Desenvolvimento e manutenção do site institucional utilizando Next.js e Tailwind CSS.",
       "res2": "Implementação de práticas de SEO e acessibilidade para melhorar a visibilidade online.",
       "res3": "Colaboração com a equipe de design para criar uma experiência de usuário envolvente."
@@ -144,7 +144,7 @@
   },
   "ProjectDetails": {
     "back": "Voltar aos projetos",
-    "visit": "Visitar Projeto",
+    "visit": "Visitar",
     "view_code": "Ver Código", 
     "tech_stack": "Etiquetas",
     "about": "Sobre o Projeto",

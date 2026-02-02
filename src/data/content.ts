@@ -4,35 +4,35 @@ export const PROJECTS = [
     url: "https://espacocinthiafranca.vercel.app",
     githubUrl: "https://github.com/andreynzz/espacocinthiafranca",
     image: "/projeto1.png",
-    tags: ['Website', 'Responsivo', 'UI/UX', 'SEO', 'Acessibilidade'],
+    tags: ['Website', 'Responsivo', 'UI/UX', 'SEO', 'Accessibility', 'Performance'],
   },
   { 
     id: 2, 
     url: "#",
     githubUrl: "#",
     image: "",
-    tags: ['Web App', 'AI', 'Videochamada', 'Fullstack', 'API REST', 'Equipe'], 
+    tags: ['Web App', 'AI', 'Real-time Video', 'Fullstack', 'API REST', 'Equipe', 'Performance', 'Accessibility', 'SEO', 'Responsive Design'], 
   },
   { 
     id: 3, 
     url: "#",
     githubUrl: "https://github.com/andreynzz/rythym",
     image: "",
-    tags: ['Web App', 'AI', 'API REST'],
+    tags: ['Web App', 'AI', 'API REST', 'Fullstack', 'Performance', 'Accessibility', 'SEO', 'Responsive Design'],
   },
   {
     id: 4,
     url: "#",
     githubUrl: "https://github.com/andreynzz/spooky_house",
     image: "/spooky_house.svg",
-    tags: ['Website', 'Ecommerce', 'Responsivo']
+    tags: ['Website', 'Ecommerce', 'Responsivo', 'UI/UX', 'SEO', 'Accessibility', 'Performance']
   },
   {
     id: 5,
     url: "#",
     githubUrl: "https://github.com/andreynzz/botloldiscord",
     image: "/mpjlol.png",
-    tags: ['BOT', 'Discord']
+    tags: ['BOT', 'Discord', 'JavaScript', 'API REST', ]
   }
 ];
 
@@ -47,7 +47,9 @@ export const TECH_SKILLS = [
 
 // Apenas as chaves para buscar no JSON
 export const SOFT_SKILLS_KEYS = [
-  "teamwork", "problemsolving", "agile", "ai_integration", "performance", "SEO", "Accessibility"
+  "teamwork", "problemsolving", "agile", "ai_integration", "performance", 
+  "SEO", "Accessibility", "communication", "leadership", "creativity", "adaptability",
+  "time_management", "critical_thinking", "collaboration"
 ];
 
 export const EducationTimeline = [

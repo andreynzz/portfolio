@@ -1,6 +1,6 @@
 import { ProjectItem } from "@/src/types/project.type";
 import { useTranslations } from "next-intl";
-import { Code, Cpu } from "iconoir-react"; // Sugestão de ícones decorativos
+import { Code, Cpu } from "iconoir-react";
 
 export default function SidebarTags({ project }: { project: ProjectItem }) {
     const tDetails = useTranslations('ProjectDetails');
