@@ -5,8 +5,6 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import dynamic from 'next/dynamic';
 import Header from "@/src/components/header";
-import { Suspense } from "react";
-import Loading from "./loading";
 
 // Otimização: Carrega o background pesado de forma dinâmica e apenas no cliente
 const AnimatedBackground = dynamic(() => import('@/src/components/ui/animated-background'), { 
