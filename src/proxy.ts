@@ -5,5 +5,5 @@ export default createMiddleware(routing);
  
 export const config = {
   // Corresponde a todas as rotas exeto api, _next, assets, etc.
-  matcher: ['/', '/(pt|en)/:path*']
+  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)']
 };
