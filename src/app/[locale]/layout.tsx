@@ -10,14 +10,17 @@ const playfair = Playfair_Display({
   variable: "--font-playfair-display",
   subsets: ['latin'], 
   style: ['normal', 'italic'], 
-  weight: ['400', '600'] }
-);
+  weight: ['400', '600'], 
+  display: 'swap'
+});
+
 const mono = JetBrains_Mono({ 
   variable: "--font-jetbrains-mono",
   subsets: ['latin'], 
   style: ['normal', 'italic'], 
-  weight: ['400'] }
-);
+  weight: ['400'],
+  display: 'swap'
+});
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 

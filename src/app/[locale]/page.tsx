@@ -7,7 +7,8 @@ import { Github, Linkedin, Mail, ArrowRight, Whatsapp, Download } from "iconoir-
 import Header from "@/src/components/header";
 import { SocialBtn } from "@/src/components/social-btn";
 import { useParams } from "next/navigation";
-import ApproachSection from "@/src/components/approach-section";
+import dynamic from "next/dynamic";
+const ApproachSection = dynamic(() => import('@/src/components/approach-section'));
 
 export default function Home() {
   const tHero = useTranslations('HomePage.HeroPage');
@@ -57,7 +58,7 @@ export default function Home() {
         {/* Pequena Bio */}
         <motion.p 
           variants={itemVariants}
-          className="text-white/60 text-base sm:text-lg md:text-xl leading-relaxed mb-8 text-center text-balance font-sans max-w-2xl px-2"
+          className="text-white/80 text-base sm:text-lg md:text-xl leading-relaxed mb-8 text-center text-balance font-sans max-w-2xl px-2"
         >
           {tHero('description')}
         </motion.p>
