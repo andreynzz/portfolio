@@ -23,8 +23,8 @@ export function CardContent({ project }: { project: ProjectProps['project'] }) {
       <div className="p-6 flex flex-col justify-between h-full relative z-20">
         <div className="flex justify-between items-start">
           <div className="flex flex-wrap gap-2">
-            {Array.isArray(project.tag) ? (
-              project.tag.slice(0, 3).map((tag, i) => (
+            {Array.isArray(project.tags) ? (
+              project.tags.slice(0, 3).map((tag, i) => (
                 <span key={i} className="px-2 py-1 rounded-md border border-white/10 text-[10px] font-medium uppercase tracking-wider bg-black/40 backdrop-blur-sm text-white/70">
                   {tag}
                 </span>
