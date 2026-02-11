@@ -3,10 +3,11 @@
 import { domAnimation, LazyMotion, m } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { Github, Linkedin, Mail, ArrowRight, Whatsapp, Download } from "iconoir-react";
+import { Github, Linkedin, Mail, ArrowRight, Whatsapp } from "iconoir-react";
 import { SocialBtn } from "@/src/components/social-btn";
 import { useParams } from "next/navigation";
 import dynamic from "next/dynamic";
+import { DownloadCVButton } from "./pdf/download-cv-button";
 
 // Carregamento dinâmico do ApproachSection
 const ApproachSection = dynamic(() => import('@/src/components/approach-section'));
@@ -14,7 +15,7 @@ const ApproachSection = dynamic(() => import('@/src/components/approach-section'
 export default function HeroSection() {
   const tHero = useTranslations('HomePage.HeroPage');
   const params = useParams();
-  const locale = params.locale;
+  const locale = (params?.locale as string) || 'pt';
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -56,14 +57,6 @@ export default function HeroSection() {
             </span>
           </m.h1>
 
-          {/* Pequena Bio */}
-          <m.p 
-            variants={itemVariants}
-            className="text-white/80 text-base sm:text-lg md:text-xl leading-relaxed mb-8 text-center text-balance font-sans max-w-2xl px-2"
-          >
-            {tHero('description')}
-          </m.p>
-
           {/* Botões de Ação */}
           <m.div 
             variants={itemVariants} 
@@ -84,16 +77,7 @@ export default function HeroSection() {
               {tHero('contactMe')}
             </Link>
             
-            <a 
-              href="/Andrey_Pirola_FullStack_Developer.pdf" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              download="Andrey_Pirola_FullStack_Developer.pdf"
-              className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-white/20 text-white hover:bg-white/10 transition-all cursor-pointer w-full sm:w-auto text-sm sm:text-base"
-            >
-              <Download className="w-4 h-4" />
-              {tHero('downloadCV')}
-            </a>
+            <DownloadCVButton locale={locale} />
           </m.div>
 
           {/* Links Sociais */}

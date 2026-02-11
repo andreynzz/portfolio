@@ -56,7 +56,7 @@ export const EducationTimeline = [
   {
     translationKey: "UNICID_ES",
     institution: "Universidade Cidade de São Paulo - UNICID",
-    period: "2025 - Presente",
+    period: "2025 - 2028",
   },
   {
     translationKey: "UNICID_ADS",
@@ -65,12 +65,12 @@ export const EducationTimeline = [
   },
   {
     translationKey: "SENAC",
-    institution: "SENAC",
+    institution: "SENAC - Serviço Nacional de Aprendizagem Comercial",
     period: "2021 - 2023",
   },
   {
     translationKey: "CULTURA",
-    institution: "Escola de Idiomas Cultura Inglesa",
+    institution: "Cultura Inglesa - Escola de Idiomas e Cultura",
     period: "2019 - 2022",
   }
 ];
