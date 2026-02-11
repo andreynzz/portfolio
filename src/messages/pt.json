@@ -81,10 +81,10 @@
   "Experience": {
     "title": "Experiência Profissional",
     "Psiconnect": {
-      "role": "Product Owner & Desenvolvedor Fullstack",
+      "role": "Desenvolvedor Fullstack e Scrum Master",
       "period": "2025",
       "res1": "Liderança do desenvolvimento de uma plataforma de terapia online, coordenando uma equipe de 4 desenvolvedores.",
-      "res2": "Implementação de funcionalidades de videochamada e agendamento utilizando Next.js e Node.js.",
+      "res2": "Preparação do projeto para lançamento do MVP",
       "res3": "Colaboração com designers para criar uma interface de usuário intuitiva e acessível.",
       "res4": "Garantia da conformidade com regulamentos de privacidade de dados, como LGPD e GDPR.",
       "res5": "Otimização do desempenho da aplicação, resultando em uma redução de 30% no tempo de carregamento."
