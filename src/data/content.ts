@@ -33,6 +33,13 @@ export const PROJECTS = [
     githubUrl: "https://github.com/andreynzz/botloldiscord",
     image: "/mpjlol.png",
     tags: ['BOT', 'Discord', 'JavaScript', 'API REST', ]
+  },
+  {
+    id: 6,
+    url: "#",
+    githubUrl: "https://github.com/TheRedDoor-Group/oryon",
+    image: "",
+    tags: ['Web App', 'AI', 'Scraping', 'Automation', 'Fullstack']
   }
 ];
 

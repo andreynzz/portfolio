@@ -58,6 +58,12 @@
       "description": "Um bot simples de discord para aprender sobre o processo de desenvolvimento e feito como piada para um grupo de amigos.",
       "role": "Fullstack",
       "status": "Arquivado"
+    },
+    "6": {
+      "title": "Oryon | Lead Prospector",
+      "description": "Uma ferramenta de prospecção de leads para equipes de vendas, utilizando técnicas avançadas de scraping e automação para coletar dados de contato de potenciais clientes em larga escala.",
+      "role": "Fullstack Developer",
+      "status": "Em desenvolvimento"
     }
   },
   "Education": {
