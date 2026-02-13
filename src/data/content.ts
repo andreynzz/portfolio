@@ -1,55 +1,118 @@
-export const PROJECTS = [
+import { Approach, Category, Education, ProfessionalExperience, Project } from "./interfaces";
+
+export const STACK = {
+  NEXT: "Next.js",
+  REACT: "React",
+  TS: "TypeScript",
+  TAILWIND: "Tailwind",
+  NEST: "Nest.js",
+  NODE: "Node.js",
+  AI: "AI Integration",
+  DISCORD: "Discord.js",
+  PHP: "PHP",
+  WORDPRESS: "WordPress",
+  CSHARP: ".NET",
+  PYTHON: "Python",
+  FASTAPI: "FastAPI",
+  FIGMA: "Figma",
+  AWS: "AWS",
+  SQL: "SQL",
+  MONGODB: "MongoDB",
+  GRAPHQL: "GraphQL",
+  MYSQL: "MySQL",
+  POSTGRESQL: "PostgreSQL",
+  SCSS: "Sass",
+  CSS: "CSS",
+  HTML: "HTML",
+  JS: "JavaScript",
+  ANGULAR: "Angular.js",
+  RESTAPI: "REST API",
+  LINUX: "Linux",
+  EXPRESS: "Express.js",
+  CHARTJS: "Chart.js",
+  VITE: "Vite.js",
+  GIT: "Git",
+  GITHUB: "GitHub",
+  DOCKER: "Docker",
+  PRISMORM: "PrismORM",
+  TYPEORM: "TypeORM",
+  BOOTSTRAP: "Bootstrap",
+  SQLITE: "SQLite",
+  LENIS: "Lenis.js",
+  GSAP: "GSAP",
+  FM: "Framer Motion"
+};
+
+const FEATURES = {
+  SEO: "SEO",
+  A11Y: "Accessibility",
+  PERF: "Performance",
+  RESPONSIVE: "Responsive Design",
+  UI_UX: "UI/UX",
+  I18N: "i18n",
+};
+
+export const PROJECTS: Project[] = [
   { 
     id: 1, 
     url: "https://espacocinthiafranca.vercel.app",
     githubUrl: "https://github.com/andreynzz/espacocinthiafranca",
     image: "/projeto1.png",
-    tags: ['Website', 'Responsivo', 'UI/UX', 'SEO', 'Accessibility', 'Performance'],
+    category: "Website", 
+    stack: [STACK.NEXT, STACK.TAILWIND, STACK.TS, STACK.NODE, STACK.FIGMA, STACK.PRISMORM, STACK.POSTGRESQL, STACK.FM],
+    features: [FEATURES.RESPONSIVE, FEATURES.UI_UX, FEATURES.SEO, FEATURES.PERF],
+    get tags() { return [this.category, ...this.stack, ...this.features] }
   },
   { 
     id: 2, 
     url: "#",
     githubUrl: "#",
     image: "",
-    tags: ['Web App', 'AI', 'Real-time Video', 'Fullstack', 'API REST', 'Equipe', 'Performance', 'Accessibility', 'SEO', 'Responsive Design'], 
+    category: "Web App", 
+    stack: [STACK.NEXT, STACK.TAILWIND, STACK.TS, STACK.AI, STACK.RESTAPI, STACK.DOCKER],
+    features: [FEATURES.RESPONSIVE, FEATURES.UI_UX, FEATURES.SEO, FEATURES.PERF, FEATURES.I18N],
+    get tags() { return [this.category, ...this.stack, ...this.features] }
   },
   { 
     id: 3, 
     url: "#",
     githubUrl: "https://github.com/andreynzz/rythym",
     image: "",
-    tags: ['Web App', 'AI', 'API REST', 'Fullstack', 'Performance', 'Accessibility', 'SEO', 'Responsive Design'],
+    category: "Web App", 
+    stack: [STACK.NEXT, STACK.SCSS, STACK.TS, STACK.AI, STACK.RESTAPI, STACK.DOCKER, STACK.LENIS, STACK.GSAP],
+    features: [FEATURES.RESPONSIVE, FEATURES.UI_UX, FEATURES.SEO, FEATURES.PERF, FEATURES.I18N],
+    get tags() { return [this.category, ...this.stack, ...this.features] }
   },
   {
     id: 4,
     url: "#",
     githubUrl: "https://github.com/andreynzz/spooky_house",
     image: "/spooky_house.svg",
-    tags: ['Website', 'Ecommerce', 'Responsivo', 'UI/UX', 'SEO', 'Accessibility', 'Performance']
+    category: "Website", 
+    stack: [STACK.PHP, STACK.BOOTSTRAP, STACK.MYSQL, STACK.CSS, STACK.HTML, STACK.JS],
+    features: [FEATURES.UI_UX, FEATURES.RESPONSIVE],
+    get tags() { return [this.category, ...this.stack, ...this.features] }
   },
   {
     id: 5,
     url: "#",
     githubUrl: "https://github.com/andreynzz/botloldiscord",
     image: "/mpjlol.png",
-    tags: ['BOT', 'Discord', 'JavaScript', 'API REST', ]
+    category: "Bot",
+    stack: [STACK.DISCORD, STACK.JS],
+    features: [],
+    get tags() { return [this.category, ...this.stack, ...this.features] }
   },
   {
     id: 6,
     url: "#",
     githubUrl: "https://github.com/TheRedDoor-Group/oryon",
     image: "",
-    tags: ['Web App', 'AI', 'Scraping', 'Automation', 'Fullstack']
+    category: "API REST",
+    stack: [STACK.PYTHON, STACK.FASTAPI, STACK.SQLITE],
+    features: [],
+    get tags() { return [this.category, ...this.stack, ...this.features] }
   }
-];
-
-// Separa skills técnicas (universais) das comportamentais (traduzíveis)
-export const TECH_SKILLS = [
-  "HTML", "CSS", "SASS", "React", "Next.js", "Angular.js", "Bootstrap",
-  "JavaScript", "TypeScript", "Tailwind", "Node.js", "Nest.js", "NoSQL",
-  "Express", "API REST", "GraphQL", "AWS", "Vercel", "Linux",
-  "PostgreSQL", "MongoDB", "MySQL", "Docker", "PrismaORM", "Git",
-  "PHP", "WordPress", "C#", ".NET", "Python", "Figma"
 ];
 
 // Apenas as chaves para buscar no JSON
@@ -59,7 +122,7 @@ export const SOFT_SKILLS_KEYS = [
   "time_management", "critical_thinking", "collaboration"
 ];
 
-export const EducationTimeline = [
+export const EducationTimeline: Education[] = [
   {
     translationKey: "UNICID_ES",
     institution: "Universidade Cidade de São Paulo - UNICID",
@@ -82,7 +145,7 @@ export const EducationTimeline = [
   }
 ];
 
-export const professionalExperience = [
+export const professionalExperience: ProfessionalExperience[] = [
   {
     translationKey: "Psiconnect",
     company: "Psiconnect",
@@ -100,7 +163,7 @@ export const professionalExperience = [
   },
 ];
 
-export const MY_APPROACH = [
+export const MY_APPROACH: Approach[] = [
   {
     id: 1,
     icon: "user", // Vamos usar isso para escolher o ícone no componente
@@ -116,4 +179,18 @@ export const MY_APPROACH = [
     icon: "fast",
     translationKey: "performance"
   }
+];
+
+// mapeamento para múltiplas tags
+export const CATEGORY_MAP: Record<string, string[]> = {
+  ai: ['AI', 'BOT'],
+  web_app: ['Web App', 'Website'],
+  api: ['API REST', 'GraphQL'],
+};
+
+export const CATEGORIES: Category[] = [
+  { id: "all", label: "Todos"},
+  { id: "api", label: "API"},
+  { id: "web_app", label: "Web/App"},
+  { id: "ai", label: "AI & Bots"},
 ];

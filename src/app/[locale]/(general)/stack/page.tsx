@@ -1,6 +1,6 @@
 "use client";
 
-import { SOFT_SKILLS_KEYS, TECH_SKILLS } from "@/src/data/content";
+import { SOFT_SKILLS_KEYS, STACK } from "@/src/data/content";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 
@@ -21,7 +21,7 @@ export default function Stack() {
                     <div>
                         <h4 className="text-sm text-white/40 uppercase mb-3 tracking-widest">Tech</h4>
                         <div className="flex flex-wrap gap-2">
-                            {TECH_SKILLS.map((skill, i) => (
+                            {Object.values(STACK).map((skill, i) => (
                                 <span key={i} className="px-4 py-2 border border-white/10 rounded-full text-xs text-white/70 hover:bg-[#FFC107] hover:text-black hover:border-[#FFC107] transition-all duration-300 cursor-default">
                                     {skill}
                                 </span>

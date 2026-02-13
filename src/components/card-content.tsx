@@ -18,8 +18,9 @@ export function CardContent({ project }: { project: ProjectProps['project'] }) {
             className="object-cover opacity-50 group-hover:opacity-30 group-hover:scale-105 transition-all duration-700 grayscale group-hover:grayscale-0"
          /> 
       </div>
-      <div className="absolute inset-0 bg-linear-to-t from-[#121212] via-[#121212]/80 to-transparent z-10" />
       
+      <div className="absolute inset-0 bg-linear-to-t from-[#0a0a0a] via-[#0a0a0a]/80 to-transparent z-10" />     
+
       <div className="p-6 flex flex-col justify-between h-full relative z-20">
         <div className="flex justify-between items-start">
           <div className="flex flex-wrap gap-2">

@@ -3,7 +3,7 @@ import { Page, Text, View, Document, StyleSheet, Link, Font } from '@react-pdf/r
 import { 
   professionalExperience, 
   EducationTimeline, 
-  TECH_SKILLS, 
+  STACK as TECH_SKILLS, 
   SOFT_SKILLS_KEYS,
   PROJECTS 
 } from '@/src/data/content';
@@ -135,7 +135,7 @@ export const CurriculumPDF = ({ dict, locale }: CurriculumPDFProps) => {
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Hard Skills</Text>
           <View style={styles.skillsContainer}>
-            {TECH_SKILLS.map((skill, index) => (
+            {Object.values(TECH_SKILLS).map((skill, index) => (
               <Text key={index} style={styles.skillBadge}>{skill}</Text>
             ))}
           </View>
