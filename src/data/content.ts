@@ -160,11 +160,6 @@ export const EducationTimeline: Education[] = [
 
 export const professionalExperience: ProfessionalExperience[] = [
   {
-    translationKey: "Psiconnect",
-    company: "Psiconnect",
-    responsibilityCount: 5, // Ajuda a iterar no componente (res1, res2...)
-  },
-  {
     translationKey: "EspacoCinthia",
     company: "Espaço Cinthia França",
     responsibilityCount: 3,

@@ -92,15 +92,6 @@
   },
   "Experience": {
     "title": "Experiência Profissional",
-    "Psiconnect": {
-      "role": "Desenvolvedor Fullstack e Scrum Master",
-      "period": "2025",
-      "res1": "Liderança do desenvolvimento de uma plataforma de terapia online, coordenando uma equipe de 4 desenvolvedores.",
-      "res2": "Preparação do projeto para lançamento do MVP",
-      "res3": "Colaboração com designers para criar uma interface de usuário intuitiva e acessível.",
-      "res4": "Garantia da conformidade com regulamentos de privacidade de dados, como LGPD e GDPR.",
-      "res5": "Otimização do desempenho da aplicação, resultando em uma redução de 30% no tempo de carregamento."
-    },
     "EspacoCinthia": {
       "role": "Desenvolvedor Fullstack",
       "period": "2025",

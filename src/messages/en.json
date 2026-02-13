@@ -92,15 +92,6 @@
   },
   "Experience": {
     "title": "Professional Experience",
-    "Psiconnect": {
-      "role": "Fullstack Developer and Scrum Master",
-      "period": "2025",
-      "res1": "Leading the development of an online therapy platform, coordinating a team of 4 developers.",
-      "res2": "Preparation of the project for MVP launch.",
-      "res3": "Collaboration with designers to create an intuitive and accessible user interface.",
-      "res4": "Ensuring compliance with data privacy regulations, such as LGPD and GDPR.",
-      "res5": "Application performance optimization, resulting in a 30% reduction in load time."
-    },
     "EspacoCinthia": {
       "role": "Fullstack Developer",
       "period": "2025",
