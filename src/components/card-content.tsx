@@ -9,14 +9,13 @@ export function CardContent({ project }: { project: ProjectProps['project'] }) {
   return (
     <div className="group relative bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl overflow-hidden hover:border-[#FFC107]/50 transition-all duration-500 flex flex-col h-full min-h-75">
       {/* Imagem de Fundo com Overlay */}
-      <div className="absolute inset-0 z-0">
-         <div className="absolute inset-0 bg-linear-to-br from-amber-900/30 to-yellow-900/30 group-hover:scale-105 transition-transform duration-700" />
-         <Image 
-            src={project.image || '/404_file_not_found.jpg'} 
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <Image 
+            src={project.image} 
             alt={t(`${project.id}.title`)} 
             fill 
-            className="object-cover opacity-50 group-hover:opacity-30 group-hover:scale-105 transition-all duration-700 grayscale group-hover:grayscale-0"
-         /> 
+            className="object-cover object-top transition-all duration-[5s] ease-in-out group-hover:object-bottom"
+        /> 
       </div>
       
       <div className="absolute inset-0 bg-linear-to-t from-[#0a0a0a] via-[#0a0a0a]/80 to-transparent z-10" />     

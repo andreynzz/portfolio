@@ -1,5 +1,7 @@
 import { Approach, Category, Education, ProfessionalExperience, Project } from "./interfaces";
 
+export const ImageNotFound = '/404_file_not_found.jpg'
+
 export const STACK = {
   NEXT: "Next.js",
   REACT: "React",
@@ -50,6 +52,7 @@ const FEATURES = {
   RESPONSIVE: "Responsive Design",
   UI_UX: "UI/UX",
   I18N: "i18n",
+  AUTOMATION: "Automation",
 };
 
 export const PROJECTS: Project[] = [
@@ -57,7 +60,7 @@ export const PROJECTS: Project[] = [
     id: 1, 
     url: "https://espacocinthiafranca.vercel.app",
     githubUrl: "https://github.com/andreynzz/espacocinthiafranca",
-    image: "/projeto1.png",
+    image: "/espacoci.png",
     category: "Website", 
     stack: [STACK.NEXT, STACK.TAILWIND, STACK.TS, STACK.NODE, STACK.FIGMA, STACK.PRISMORM, STACK.POSTGRESQL, STACK.FM],
     features: [FEATURES.RESPONSIVE, FEATURES.UI_UX, FEATURES.SEO, FEATURES.PERF],
@@ -67,7 +70,7 @@ export const PROJECTS: Project[] = [
     id: 2, 
     url: "#",
     githubUrl: "#",
-    image: "",
+    image: ImageNotFound,
     category: "Web App", 
     stack: [STACK.NEXT, STACK.TAILWIND, STACK.TS, STACK.AI, STACK.RESTAPI, STACK.DOCKER],
     features: [FEATURES.RESPONSIVE, FEATURES.UI_UX, FEATURES.SEO, FEATURES.PERF, FEATURES.I18N],
@@ -77,7 +80,7 @@ export const PROJECTS: Project[] = [
     id: 3, 
     url: "#",
     githubUrl: "https://github.com/andreynzz/rythym",
-    image: "",
+    image: ImageNotFound,
     category: "Web App", 
     stack: [STACK.NEXT, STACK.SCSS, STACK.TS, STACK.AI, STACK.RESTAPI, STACK.DOCKER, STACK.LENIS, STACK.GSAP],
     features: [FEATURES.RESPONSIVE, FEATURES.UI_UX, FEATURES.SEO, FEATURES.PERF, FEATURES.I18N],
@@ -107,10 +110,20 @@ export const PROJECTS: Project[] = [
     id: 6,
     url: "#",
     githubUrl: "https://github.com/TheRedDoor-Group/oryon",
-    image: "",
+    image: ImageNotFound,
     category: "API REST",
-    stack: [STACK.PYTHON, STACK.FASTAPI, STACK.SQLITE],
-    features: [],
+    stack: [STACK.PYTHON, STACK.FASTAPI, STACK.SQLITE, STACK.VITE],
+    features: [FEATURES.AUTOMATION],
+    get tags() { return [this.category, ...this.stack, ...this.features] }
+  },
+  {
+    id: 7,
+    url: "https://finances-dashboard-lime.vercel.app",
+    githubUrl: "https://github.com/andreynzz/finances-dashboard",
+    image: "/finance_manager.png",
+    category: "Web App",
+    stack: [STACK.ANGULAR, STACK.TS, STACK.SCSS, STACK.CHARTJS, STACK.LENIS, STACK.GSAP, STACK.HTML],
+    features: [FEATURES.RESPONSIVE, FEATURES.UI_UX],
     get tags() { return [this.category, ...this.stack, ...this.features] }
   }
 ];

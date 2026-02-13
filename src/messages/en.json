@@ -32,31 +32,31 @@
     "1": {
       "title": "Espaço Cinthia França",
       "description": "The Espaço Terapêutico Cinthia França was completely redrawn, resulting in improved accessibility and indexation (SEO) for the clinic. It presents a modern and user-friendly interface, making scheduling appointments and accessing clinic information easy.",
-      "role": "Fullstack & Design",
+      "role": "Fullstack Developer & Design",
       "status": "Completed"
     },
     "2": {
       "title": "Psiconnect",
       "description": "SaaS for online therapy. Scalable architecture with WebRTC for real-time video and scheduling management. My role in this project was to gather requirements and architect the solution as Product Owner, as well as act as Fullstack developer.",
-      "role": "Product Owner & Fullstack",
+      "role": "Product Owner & Fullstack Developer",
       "status": "Archived"
     },
     "3": {
       "title": "Rythym",
       "description": "Music streaming app with personalized playlists and AI-based recommendations.",
-      "role": "Fullstack",
+      "role": "Fullstack Developer",
       "status": "Planning"
     },
     "4": {
       "title": "Spooky House",
       "description": "A Halloween-themed e-commerce site developed as a project for a web development course at university.",
-      "role": "Fullstack",
+      "role": "Fullstack Developer",
       "status": "Completed | Incomplete"
     },
     "5": {
       "title": "MPJLOL BOT",
       "description": "A simple Discord bot for learning about the development process, made as a joke for a group of friends.",
-      "role": "Fullstack",
+      "role": "Fullstack Developer",
       "status": "Archived"
     },
     "6": {
@@ -64,6 +64,12 @@
       "description": "A lead prospecting tool for sales teams, using advanced scraping and automation techniques to collect contact data from potential customers at scale.",
       "role": "Fullstack Developer",
       "status": "In development"
+    },
+    "7": {
+      "title": "Finance Dashboard",
+      "description": "A simple financial dashboard that features a chart using Chart.js, i18n and Angular.js. This dashboard was developed using only the frontend with mock data, the focus is to learn the structure and use of Angular in projects.",
+      "role": "Fullstack Developer",
+      "status": "Completed"
     }
   },
   "Education": {

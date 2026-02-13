@@ -12,7 +12,7 @@ export default function Hero({ project }: { project: ProjectItem }) {
                     src={project.image || '/404_file_not_found.jpg'}
                     alt={t(`${project.id}.title`)}
                     fill
-                    className="object-cover"
+                    className="object-cover object-top"
                     priority
                     sizes="(max-width: 1024px) 100vw, 1200px"
                 />
